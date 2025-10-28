@@ -1,0 +1,7 @@
+[2025-10-27 20:11:11] VectorSize=10000, MaxVal=100, QueueSize=12, Result=2.49038e+07, Time=38 ms
+[2025-10-27 20:11:39] VectorSize=10000, MaxVal=100, QueueSize=12, Result=2.49038e+07, Time=41 ms
+[2025-10-27 20:11:52] VectorSize=10000, MaxVal=100, QueueSize=12, Result=2.49038e+07, Time=39 ms
+[2025-10-27 20:12:10] VectorSize=10000, MaxVal=100, QueueSize=1, Result=2.49038e+07, Time=369 ms
+[2025-10-27 20:12:19] VectorSize=10000, MaxVal=100, QueueSize=5, Result=2.49038e+07, Time=87 ms
+[2025-10-28 09:43:50] VectorSize=10000, MaxVal=1000, QueueSize=12, Result=2.49038e+09, Time=44 ms
+[2025-10-28 09:44:22] VectorSize=10000, MaxVal=1000, QueueSize=2, Result=2.49038e+09, Time=238 ms
