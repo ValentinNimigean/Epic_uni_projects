@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelated Image Reveal</title>
+    <style>
+        /* Reset default margin and padding */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+        }
+
+        /* Container for the image */
+        .image-container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        /* Pixelated image */
+        .pixelated-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('pixel.jpg'); /* Replace with your pixelated image */
+           
+            background-size: cover;
+            z-index: 1;
+        }
+
+        /* Clear image */
+        .clear-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('clear.jpg'); /* Replace with your clear image */
+            background-size: cover;
+            clip-path: circle(0 at 50% 50%); /* Start with no visible area */
+            transition: clip-path 0.3s ease;
+            z-index: 2;
+            pointer-events: none; /* Allow hover to pass through to the container */
+        }
+
+        /* Hover effect */
+        .image-container:hover .clear-image {
+            clip-path: circle(100px at var(--x, 50%) var(--y, 50%));
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div class="pixelated-image"></div>
+        <div class="clear-image"></div>
+    </div>
+</body>
+</html>

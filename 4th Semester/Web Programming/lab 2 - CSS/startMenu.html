@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Windows</title>
+  <style>
+   body, ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    body {
+      height: 100vh;
+      font-family:Tahoma;
+      background-image: url('back.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .taskbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background-color: #0f3ebf; 
+      align-items: center;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+   
+    .start-button {
+      background-color: #00c21d;
+      color: white;
+      border: 1px solid #000;
+      font-size: 14px;
+      cursor: pointer;
+      padding: 11px;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    }
+    start-button:hover {
+      background-color: hsl(129, 93%, 17%);
+    }
+    
+    .start-button img {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+    }
+
+    .profile {
+      
+      align-items: center;
+      padding: 10px;
+      background-color: #316ac5;
+      border-bottom: 2px solid #003c74;
+    }
+
+    .profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 2px solid #fff;
+    }
+
+    .profile span {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+
+   
+    .menu {
+      position: fixed;
+      top: 40px;
+      left: 0;
+      width: 200px;
+      background-color: #ece9d8;
+      border: 2px solid #003c74;
+      border-radius: 5px;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+      display: none; 
+    }
+
+   
+    .start-button:hover + .menu,
+    .menu:hover {
+      display: block;
+    }
+    .menu li {
+     position: relative;
+      padding: 8px 15px;
+      cursor: pointer;
+      color: #000;
+      font-size: 14px;
+    
+      border-bottom: 1px solid #ccc;
+      transition: background-color 0.3s;
+    }
+    .menu li:hover {
+      background-color: #316ac5;
+      color: white;
+    }
+    .submenu {
+      display: none;
+  
+      top: -2px;
+      position: absolute;
+      
+
+      left: 100%;
+      width: 200px;
+      background-color: #ece9d8;
+      border: 2px solid #003c74;
+      border-radius: 5px;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+    .menu li:hover > .submenu {
+      display: block;
+    }
+    .submenu .submenu {
+      top:0;
+      left: 100%;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="taskbar">
+      <button class="start-button">
+        <img src="logo.png" alt="Start"> 
+        Start
+      </button>
+      <ul class="menu">
+        <li class="profile">
+          <img src="clear.jpg" alt="Profile Picture">
+          <span>Putzi69</span>
+        </li>
+        <li>Programs
+          <ul class="submenu">
+            <li>Apps
+              <ul class="submenu">
+                <li>Notepad
+                  <ul class="submenu">
+                    <li>Notepad++</li>
+                  </ul>
+
+
+                </li>
+                <li>Paint</li>
+              </ul>
+            </li>
+            <li>Games
+              <ul class="submenu">
+                <li>Fortnite</li>
+                <li>Sonic Mania</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Documents
+          <ul class="submenu">
+            <li>Work
+              <ul class="submenu">
+                <li>diploma.pdf</li>
+                <li>cheatsheet.docx</li>
+              </ul>
+            </li>
+            <li>Personal</li>
+          </ul>
+        </li>
+        <li>Settings
+          <ul class="submenu">
+            <li>System</li>
+            <li>Conmtrol Pannel</li>
+          </ul>
+        </li>
+        <li>Help</li>
+      </ul>
+    </div>
+  </body>
+  </html>

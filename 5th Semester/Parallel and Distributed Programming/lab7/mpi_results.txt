@@ -1,0 +1,19 @@
+Python MPI Results (Scatter/Gather) - Nodes: 9
+==============================================
+
+Size 1000:
+  Naive (Scatter): 30.59 ms
+  Karatsuba: 12.94 ms
+
+Size 5000:
+  Naive (Scatter): 602.76 ms
+  Karatsuba: 205.30 ms
+
+Size 10000:
+  Naive (Scatter): 2640.13 ms
+  Karatsuba: 529.51 ms
+
+Size 20000:
+  Naive (Scatter): 8934.80 ms
+  Karatsuba: 1537.34 ms
+

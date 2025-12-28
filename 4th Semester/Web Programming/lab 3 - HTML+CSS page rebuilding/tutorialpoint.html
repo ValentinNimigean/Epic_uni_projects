@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage Layout</title>
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+
+            min-height: 100vh;
+            line-height: 1.5;
+            font-family: Verdana,sans-serif;
+            background-color:hsl(0, 0%, 100%);
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+            top: 0%;
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+            
+        }   
+        main{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+        }
+
+        ul{
+            list-style:none;
+        }
+      
+
+        .logo{
+            overflow: hidden;
+        }
+
+        .header-container{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+
+        .container,
+.container-fluid {
+    width: min(calc(100% - 1.875rem * 2), 1413px);
+    margin-inline: auto;
+}
+
+.container--lg {
+    width: min(calc(100% - .5rem * 2), 95.875rem);
+    margin-inline: auto;
+}
+
+.container--sm {
+    width: min(calc(100% - 1rem * 2), 75.875rem);
+    margin-inline: auto;
+}
+
+.container--xs {
+    width: min(calc(100% - 1.25rem * 2), 1128px);
+    margin-inline: auto;
+}
+
+
+        .home-header{
+           
+            background-color:hsl(135, 96%, 35%);
+            position: relative;
+  
+            height: 45px;
+            display: flex;
+            align-items: center;
+            margin-inline: auto;
+            width: min(calc(100% - 1.875rem * 2), 1413px);
+            left: 0;
+             right: 0;
+            overflow: hidden;
+            justify-content: space-between;
+
+            margin: 0;
+            
+            
+         
+            box-shadow: 0 0 0 100vmax hsl(135, 96%, 35%);
+            clip-path: inset(0 -100vmax); 
+
+        
+         
+           
+            
+        }
+        .header-span{
+            width: 10%;
+        }
+
+        .home-list{
+            
+            display:flex;
+            align-items: center;
+            width: fit-content;
+            display: flex;
+            gap:0.5rem;
+            overflow: hidden;
+            justify-content: left;
+            padding: 0;
+            margin: 0;
+            
+
+
+        }
+
+        .home-list-item{
+            display:flex;
+            color: #fff;
+            list-style-type: none ;
+            font-size: medium;
+            justify-content: left;
+           
+            
+        }
+
+        .home-header-svg{
+           
+            width: 1rem;
+            filter:  invert(100%) brightness(100%) contrast(100%);
+            position: relative;
+            
+            padding-right: 5px;
+        }
+        .social-svg{
+            width: 1rem;
+            filter:  invert(100%) brightness(100%) contrast(100%);
+          
+            
+
+        }
+        .moon-svg{
+            width:1.5rem ;
+            padding-right: 2rem;
+            text-decoration-thickness: 10px;
+            filter:  invert(100%) brightness(100%) contrast(100%);
+            stroke-width: 10px;
+        }
+        .button-svg{
+            width:1.5rem ;
+            
+            text-decoration-thickness: 10px;
+            filter:  invert(100%) brightness(100%) contrast(100%);
+            stroke-width: 10px;
+        }
+
+        .social-button{
+            display: flex;
+            width: 2rem;
+            height: 2rem;
+      
+            background-color:rgb(100, 150, 26);
+            border-style: solid;
+
+
+            border-width: 5px;
+            border-color:rgb(100, 150, 26);
+            align-items: center;
+            justify-content: center;
+         
+        }
+
+    
+.fullstack-photo {
+    
+    width: 100%;
+    height: auto; 
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+        .search-header{
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            width: min(calc(100% - 1.875rem * 2), 1413px);
+            overflow: hidden;
+            justify-content: space-between;
+           
+            height: 72px;
+
+            box-shadow: 0 0 0 100vmax #fff;
+            clip-path: inset(0 -100vmax); 
+
+        }
+
+        .search-header-list{
+
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: relative;
+            overflow: hidden;
+
+
+        }
+
+        .search-bar{    background-color: #fff;
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 3px;
+            padding-left: 5px;
+    border: 1px solid rgb(100, 150, 26);
+    font-size: 13px;
+    width: 27rem;
+    height: 2.5rem;
+   
+
+}
+
+
+
+
+.search-input{
+    
+    background-color: #fff;
+    padding: 3px;
+    width: 15rem;
+    border-style: none;
+
+}
+
+        .skill-selector-header{
+            
+
+            background-color:#021f30 ;
+            position: relative;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            
+            margin-inline: auto;
+            width: min(calc(100% - 1.875rem * 2), 1413px);
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            justify-content: center;
+
+            margin: 0;
+            
+            color: white;
+
+            box-shadow: 0 0 0 100vmax #021f30;
+            clip-path: inset(0 -100vmax); 
+            
+            
+        }
+        .skill-selector-list{
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            overflow: hidden;
+          
+          
+            
+            
+        }
+
+        .skill-selector-list li{
+            width:auto;
+            flex-shrink: 0;
+            overflow: hidden;
+            align-items: center;
+          
+
+
+        }
+
+        
+        .skill-selector-button{
+            display: flex;
+         
+            background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;  
+        
+        }
+
+        .skill-arrows{
+            filter: invert(100%)  saturate(749%) hue-rotate(357deg) brightness(92%) contrast(85%);
+        }
+
+    
+        
+
+        .flexing-container{
+            background-color: hsl(201, 93%, 6%);
+            width: min(calc(100% - 1.875rem * 2), 1413px);
+            height: 95px;
+            margin: 1rem;
+            
+           
+            
+            display: flex;
+           
+
+            align-items: center;
+            margin-inline: auto;
+
+            overflow: hidden;
+           
+
+            
+            
+            justify-content: center;
+            
+           
+            
+        }
+
+        .flexing-item{
+            max-width: 310px;
+            display: flex;
+          align-items:normal;
+          justify-content: space-around;
+          
+            
+            gap: 0.75rem;
+            color: #fff;
+            padding-inline: 5%;
+            width: fit-content;
+            
+        }
+
+        .flexing-image{
+            max-width: 50px;
+        }
+
+        .flexing-number{
+            line-height: 0;
+            font-size: 2rem;
+            font-weight: 700;
+            
+
+
+        }
+        .flexing-text{
+            line-height: 0.2;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+
+
+
+        .certification-container{
+            display: flex;
+            
+            
+            width: min(calc(100% - 1.875rem * 2), 1413px);
+
+            flex-direction: column;
+           align-self:center;
+           padding: 1rem;
+
+           padding-bottom: 100px;
+            
+            
+           
+            
+        }
+
+        .certification-body{
+           display: flex;
+           justify-content: space-between;
+
+        
+
+        }
+
+.green-text{
+    color: #04af2f;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    line-height: 1;
+}
+.black-text{
+    color: hsl(0, 0%, 0%);
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    line-height: 1;
+
+
+
+}
+
+.certification-button{
+        display: flex;
+        padding-left: 2rem;
+    }
+
+        .course-pannel
+        {display: flex;
+        flex-direction: column;
+        
+
+           
+            
+        }
+        .course-table{
+            display:flex;
+            overflow: hidden;
+            
+            justify-content: left;
+            overflow-x: hidden;
+            overflow-y: hidden;
+    padding: 1rem;
+    background-color: #e9e9e9 ;
+    border-radius: 0rem;
+    border: 1px solid hwb(84 9% 38%) ;
+ 
+            
+        }
+
+
+        .course-cell{
+            padding-top:10px;
+        max-width: 280px;
+        min-width: 280px;
+        margin-right: 18px;
+        
+        left: 51px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+
+   
+
+
+      
+        }
+        .video-content{
+            padding: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+        }
+
+        .course-image{
+            width: calc(100% - 26px);
+    height: auto;
+    object-fit: cover;
+    margin-inline: 13px;
+    border-radius: 1px;
+        }
+
+
+        .buy-cart{
+            font-size: 0.775rem;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    border-top: 1px solid #dbdada
+
+        }
+        .footer{
+           
+            color: #fff;
+            background-color: hsl(224, 44%, 18%);
+            
+            
+
+        }
+
+        .footer-container{
+            padding: 10px;
+            box-shadow: 0 0 0 100vmax hsl(224, 44%, 18%);
+            clip-path: inset(0 -100vmax); 
+           
+            align-content: center;
+            justify-content: center;
+            
+          
+        }
+
+        .green-button{
+            color: white;
+            font-weight: 500;
+            background-color:hwb(84 9% 38%) ;
+            border-style: solid;
+            border-color: hwb(84 9% 38%);
+            font-weight: bold;
+            border-width: 100%;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            padding-top:5px ;
+            
+            box-shadow: none;
+            box-shadow: #fff;
+            
+
+            
+        }
+        .green-button-buy-now{
+            color: white;
+            font-weight: 500;
+            background-color:hwb(84 9% 38%) ;
+            border-style: solid;
+            border-color: hwb(84 9% 38%);
+            font-weight: bold;
+            width: 10rem;
+            height: 3rem;
+            border-width: 100%;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            padding-top:5px ;  
+            box-shadow: none;
+            box-shadow: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+            
+        }
+
+        .green-button-cart
+
+        {
+            color: white;
+            font-weight: 500;
+            background-color:hwb(84 9% 38%) ;
+            border-style: solid;
+            border-color: hwb(84 9% 38%);
+            font-weight: bold;
+            
+            height: 3rem;
+            border-width: 100%;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            padding-top:5px ;  
+            box-shadow: none;
+            box-shadow: #fff;
+            
+
+            
+        }
+
+        .final-button{
+           
+            
+            position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+        }
+
+        .bold-text{
+            font-weight: bold;
+        }
+
+        .tab-button-1{
+            width: 10rem;
+            width: fit-content;
+            font-weight: 700;
+            font-size: 1.5rem;
+            
+    opacity: 1;
+  border-top: #fff;
+  border-left: #fff;
+  border-right: #fff;
+    background-color: #fff;
+    border-bottom:3px solid hwb(84 9% 38%) ;
+        }
+
+        .tab-button-2{
+            font-size: 1.5rem;
+            width: 10rem;
+            width: fit-content;
+            width: 10rem;
+            font-weight: 700;
+    opacity: 1;
+  border-top: #fff;
+  border-left: #fff;
+  border-right: #fff;
+  border-bottom: #fff;
+    background-color: #fff;
+  
+        }
+
+       
+
+
+        .green-button-2{
+            color: white;
+           
+            background-color:hwb(84 9% 38%) ;
+            border-style: solid;
+            border-color: hwb(84 9% 38%);
+            font-weight: bold;
+            height: 3rem;
+            width: 5rem;
+            
+            box-shadow: none;
+            box-shadow: #fff;
+            
+
+            
+        }
+
+
+        .green-button-final{
+            color: white;
+           
+            background-color:hwb(84 9% 38%) ;
+            border-style: solid;
+            border-color: hwb(84 9% 38%);
+            font-weight: bold;
+            height: 3rem;
+            width: 3rem;
+            
+            box-shadow: none;
+            box-shadow: #fff;
+            
+
+            
+        }
+
+        .green-button-settings{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+           
+            background-color:hwb(84 9% 38%) ;
+            border-style: solid;
+            border-color: hwb(84 9% 38%);
+            font-weight: bold;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 10%;
+            
+            box-shadow: none;
+            box-shadow: #fff;
+
+
+        }
+       .settings{
+        position: fixed;
+        left: 0;
+        top:45rem
+       }
+
+       .tablebutton{
+        
+        position: relative;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, max-content));
+    width: 100%;
+
+       }
+
+      
+       
+    
+    </style>
+</head>
+<body>
+    <div  class="header-container">
+    <div class="home-header">
+        
+           <ul class="home-list">
+              <li class="home-list-item">
+                <img src="house.svg" class="home-header-svg">
+                Home
+              </li>
+              <li class="home-list-item">
+                <img src="code.svg" class="home-header-svg">
+                Online Compilers
+              </li>
+              <li class="home-list-item">
+                <img src="whiteboard.svg" class="home-header-svg">
+                Whiteboard
+              </li>
+              <li class="home-list-item">
+                <img src="chat-bot.svg" class="home-header-svg">
+                Ai Assistant
+              </li>
+              <li class="home-list-item">
+                <img src="article.svg" class="home-header-svg">
+                Articles
+              </li>
+              <li class="home-list-item">
+                <img src="suitcase.svg" class="home-header-svg">
+                Jobs
+              </li>
+              <li class="home-list-item">
+                <img src="tools.svg" class="home-header-svg">
+                Tools
+              </li>
+              
+              <li class="home-list-item">
+                <img src="money-.svg" class="home-header-svg">
+                Write & Earn
+              </li>
+              <li class="home-list-item">
+                <img src="promote.svg" class="home-header-svg">
+                Promote & Earn
+              </li>
+            
+           </ul>
+           <span class="header-span"></span>
+       
+        
+        <ul class="home-list">
+           <li class="home-list-item">
+              <img src="moon.svg" class="moon-svg">
+              
+           </li>
+           <li>
+            <button class="social-button"><img src ="facebook.svg" class="social-svg"></li></button>
+           </li>
+           <li>
+            <button class="social-button">
+            <img src ="twitter.svg" class="social-svg"></button>
+           </li>
+           <li>
+            <button class="social-button">
+            <img src="youtube.svg" class="social-svg">
+        </button>
+
+           </li>
+           <li>
+<button class="social-button"> 
+            <img src="linkedin.svg" class="social-svg">
+</button>
+           </li>
+
+
+           <li>
+            <button class="social-button">
+
+            <img src="instagram.svg" class="social-svg"></button>
+           </li>
+        </ul>
+     </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <header class="search-header">
+        <img src ="logo.png" height="95%">
+     
+     <span><img src="square.svg" width="15rem" >  Category  <img src="down-arrow.svg" width="15rem"></span>
+ <div class="search-bar">
+     <input type="text" class="search-input" placeholder="Search your favourite tutorials ..." autocomplete="off">
+     <img src="https://www.tutorialspoint.com/static/images/search-accent.svg" width="20rem";>
+
+     </div>
+     
+
+    </div>
+    <nav>
+    <ul class="search-header-list">
+        <li class="search-header-normal">Library</li>
+        
+        <li class="search-header-normal">Courses</li>
+        <li class="search-header-normal">Certifications</li>
+        <li class="green-button">Login</li>
+        </ul>
+       </nav>
+  </header>
+
+    <div class="skill-selector-header">
+    <button  class="skill-selector-button"><img src="left-arrow.svg" width="15" class="skill-arrows"></img> </button>
+    <ul class="skill-selector-list">
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>PHP</li>
+          <li>Scala</li>
+          <li>C#</li>
+          <li>Tailwind CSS</li>
+          <li>Node.js</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+          <li>Pl/SQL</li>
+          <li>Swift</li>
+          <li>Debug</li>
+       </ul>
+       <button class="skill-selector-button" ><img src="right-arrow.svg" width="15" class="skill-arrows"></img></button>
+       
+    </div>
+    <img src="fullstack.jpg" class="fullstack-photo">
+    
+  <main>
+ 
+
+   
+
+
+
+
+	<div class="flexing-container">
+		<div class="flexing-item">
+			<img src="crown.svg" class="flexing-image">
+			<div>
+				<p class="flexing-number">10,000+</p>
+				<p class="flexing-text">Video Courses</p>
+			</div>
+		</div>
+		<div class="flexing-item" >
+			<img src="prize2.svg" class="flexing-image" >
+			<div>
+				<p class="flexing-number">5,000+</p>
+				<p class="flexing-text">Expert Trainers</p>
+			</div>
+		</div>
+		<div class="flexing-item">
+			<img src="video.svg" class="flexing-image">
+			<div>
+				<p class="flexing-number">100M+</p>
+				<p class=" flexing-text">Learners Served</p>
+			</div>
+		</div>
+		<div class="flexing-item" >
+			<img src="clock.svg" class="flexing-image" >
+			<div>
+				<p class=" flexing-number">50,000+</p>
+				<p class=" flexing-text">Learning Hours</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+  <div class="certification-container">
+    <div class="certification-body">
+        <div>
+            <span class="green-text" font-size="2.5rem">Online Certification </span><span class="black-text">Programs </span> 
+            <p>Become an expert in top technologies with our extensive online certification programs</p>
+        </div>
+        <button class="green-button-2" >See All</button>
+    </div>
+
+
+
+    <div class="course-pannel">
+		<div class="certification-button">
+			<button class="tab-button-1" tabindex="0">Most Popular</button>
+			<button class="tab-button-2" tabindex="-1">Featured</button>
+		</div>
+        <div class="tablebutton">
+		<div class="course-table">
+			
+
+
+                    
+					<div class="course-cell" role="group" aria-label="1 / 6" style="margin-right: 25px;">
+						<img class="course-image" src="fortnite.jpg" alt="DevOps Certification 2025" title="DevOps Certification 2025">       
+						<div class="video-content">
+                            <div class="bold-text">Fortnite Certification 2025</div>
+							<p >Tutorialspoint</p>
+							<div class="ebook">
+								<p><span class="bold-text">8</span> Courses 			 	 | <span class="bold-text">1</span> eBook </p>
+							</div>
+						</div>
+						<div class="buy-cart">
+                            <button class="green-button-buy-now" ><img src="hand-pointer.svg" class="button-svg">Buy Now</button>
+                            <button class="green-button-cart"><img src="shopping-cart-outline.svg" class="button-svg"></button>
+                        </div>
+							
+					</div>
+
+
+                    <div class="course-cell" role="group" aria-label="1 / 6" style="margin-right: 25px;">
+						<img class="course-image" src="fortnite.jpg" alt="DevOps Certification 2025" title="DevOps Certification 2025">       
+						<div class="video-content">
+                            <div class="bold-text">Fortnite Certification 2025</div>
+							<p >Tutorialspoint</p>
+							<div class="ebook">
+								<p><span class="bold-text">8</span> Courses 			 	 | <span class="bold-text">1</span> eBook </p>
+							</div>
+						</div>
+						<div class="buy-cart">
+                            <button class="green-button-buy-now" ><img src="hand-pointer.svg" class="button-svg">Buy Now</button>
+                            <button class="green-button-cart"><img src="shopping-cart-outline.svg" class="button-svg"></button>
+                        </div>
+							
+					</div>
+
+                    <div class="course-cell" role="group" aria-label="1 / 6" style="margin-right: 25px;">
+						<img class="course-image" src="fortnite.jpg" alt="DevOps Certification 2025" title="DevOps Certification 2025">       
+						<div class="video-content">
+                            <div class="bold-text">Fortnite Certification 2025</div>
+							<p >Tutorialspoint</p>
+							<div class="ebook">
+								<p><span class="bold-text">8</span> Courses 			 	 | <span class="bold-text">1</span> eBook </p>
+							</div>
+						</div>
+						<div class="buy-cart">
+                            <button class="green-button-buy-now" ><img src="hand-pointer.svg" class="button-svg">Buy Now</button>
+                            <button class="green-button-cart"><img src="shopping-cart-outline.svg" class="button-svg"></button>
+                        </div>
+							
+					</div>
+
+                    <div class="course-cell" role="group" aria-label="1 / 6" style="margin-right: 25px;">
+						<img class="course-image" src="fortnite.jpg" alt="DevOps Certification 2025" title="DevOps Certification 2025">       
+						<div class="video-content">
+                            <div class="bold-text">Fortnite Certification 2025</div>
+							<p >Tutorialspoint</p>
+							<div class="ebook">
+								<p><span class="bold-text">8</span> Courses 			 	 | <span class="bold-text">1</span> eBook </p>
+							</div>
+						</div>
+						<div class="buy-cart">
+                            <button class="green-button-buy-now" ><img src="hand-pointer.svg" class="button-svg">Buy Now</button>
+                            <button class="green-button-cart"><img src="shopping-cart-outline.svg" class="button-svg"></button>
+                        </div>
+							
+					</div>
+                    <div class="course-cell" role="group" aria-label="1 / 6" style="margin-right: 25px;">
+						<img class="course-image" src="fortnite.jpg" alt="DevOps Certification 2025" title="DevOps Certification 2025">       
+						<div class="video-content">
+                            <div class="bold-text">Fortnite Certification 2025</div>
+							<p >Tutorialspoint</p>
+							<div class="ebook">
+								<p><span class="bold-text">8</span> Courses 			 	 | <span class="bold-text">1</span> eBook </p>
+							</div>
+						</div>
+						<div class="buy-cart">
+                            <button class="green-button-buy-now" ><img src="hand-pointer.svg" class="button-svg">Buy Now</button>
+                            <button class="green-button-cart"><img src="shopping-cart-outline.svg" class="button-svg"></button>
+                        </div>
+							
+					</div>
+                    <div class="course-cell" role="group" aria-label="1 / 6" style="margin-right: 25px;">
+						<img class="course-image" src="fortnite.jpg" alt="DevOps Certification 2025" title="DevOps Certification 2025">       
+						<div class="video-content">
+                            <div class="bold-text">Fortnite Certification 2025</div>
+							<p >Tutorialspoint</p>
+							<div class="ebook">
+								<p><span class="bold-text">8</span> Courses 			 	 | <span class="bold-text">1</span> eBook </p>
+							</div>
+						</div>
+						<div class="buy-cart">
+                            <button class="green-button-buy-now" ><img src="hand-pointer.svg" class="button-svg">Buy Now</button>
+                            <button class="green-button-cart"><img src="shopping-cart-outline.svg" class="button-svg"></button>
+                        </div>
+							
+					</div>
+                    <div class="course-cell" role="group" aria-label="1 / 6" style="margin-right: 25px;">
+						<img class="course-image" src="fortnite.jpg" alt="DevOps Certification 2025" title="DevOps Certification 2025">       
+						<div class="video-content">
+                            <div class="bold-text">Fortnite Certification 2025</div>
+							<p >Tutorialspoint</p>
+							<div class="ebook">
+								<p><span class="bold-text">8</span> Courses 			 	 | <span class="bold-text">1</span> eBook </p>
+							</div>
+						</div>
+						<div class="buy-cart">
+                            <button class="green-button-buy-now" ><img src="hand-pointer.svg" class="button-svg">Buy Now</button>
+                            <button class="green-button-cart"><img src="shopping-cart-outline.svg" class="button-svg"></button>
+                        </div>
+							
+					</div>
+
+
+
+                    
+        
+
+                    
+
+
+                     
+                
+					
+				
+
+
+        </div>
+        <div class="final-button" >
+
+            <button class="green-button-final" ><img src="right-arrow.svg" class="button-svg"></button>
+        </div>
+    </div>
+
+        
+	
+</div>
+
+</main>
+
+<div class="settings"><button class="green-button-settings"><img src="setting-cog.svg" class="button-svg"></button></div>
+
+<footer class="footer">
+    <div class="footer-container">
+          <div class="">Tutorials Point is a leading Ed Tech company striving to provide the best learning material on technical and non-technical subjects.</div>
+          
+          <div class=""> Copyright 2025. All Rights Reserved.</div>
+    </div>
+ </footer>
+
+
+ <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    let draggedElement = null;
+
+    document.querySelectorAll("*").forEach(element => {
+        element.setAttribute("draggable", true);
+
+        element.addEventListener("dragstart", event => {
+            draggedElement = event.target;
+            event.dataTransfer.effectAllowed = "move";
+        });
+    });
+
+    document.querySelectorAll("*").forEach(zone => {
+        zone.addEventListener("dragover", event => {
+            event.preventDefault();
+            event.dataTransfer.dropEffect = "move";
+        });
+
+        zone.addEventListener("drop", event => {
+            event.preventDefault();
+            if (draggedElement) {
+                event.target.appendChild(draggedElement);
+                draggedElement = null;
+            }
+        });
+    });
+});
+
+  </script>
+
+</body>
+</html>

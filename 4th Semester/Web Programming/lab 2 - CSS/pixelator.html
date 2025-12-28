@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+        }
+
+        .pixelated {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('pixel.jpg') center/cover;
+            
+        }
+
+        .grid {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            z-index: 2;
+        }
+
+        .grid-cell {
+            position: relative;
+        }
+
+        .clear-tile {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('clear.jpg') center/cover;
+            background-size: 500% 500%;
+            opacity: 0;
+            transition: opacity 1s ease;
+          
+            
+        }
+
+        .grid-cell:hover .clear-tile {
+            opacity: 1;
+        }
+       
+
+
+        .grid-cell:nth-child(1):hover + .grid-cell:nth-child(2),
+        .clear-tile
+        {
+           background-color: rgb(195, 9, 9);
+          
+
+        }
+        .grid-cell:nth-child(1) .clear-tile { background-position: 0% 0%; }
+        .grid-cell:nth-child(2) .clear-tile { background-position: 25% 0%; }
+        .grid-cell:nth-child(3) .clear-tile { background-position: 50% 0%; }
+        .grid-cell:nth-child(4) .clear-tile { background-position: 75% 0%; }
+        .grid-cell:nth-child(5) .clear-tile { background-position: 100% 0%; }
+        .grid-cell:nth-child(6) .clear-tile { background-position: 0% 25%; }
+        .grid-cell:nth-child(7) .clear-tile { background-position: 25% 25%; }
+        .grid-cell:nth-child(8) .clear-tile { background-position: 50% 25%; }
+        .grid-cell:nth-child(9) .clear-tile { background-position: 75% 25%; }
+        .grid-cell:nth-child(10) .clear-tile { background-position: 100% 25%; }
+        .grid-cell:nth-child(11) .clear-tile { background-position: 0% 50%; }
+        .grid-cell:nth-child(12) .clear-tile { background-position: 25% 50%; }
+        .grid-cell:nth-child(13) .clear-tile { background-position: 50% 50%; }
+        .grid-cell:nth-child(14) .clear-tile { background-position: 75% 50%; }
+        .grid-cell:nth-child(15) .clear-tile { background-position: 100% 50%; }
+        .grid-cell:nth-child(16) .clear-tile { background-position: 0% 75%; }
+        .grid-cell:nth-child(17) .clear-tile { background-position: 25% 75%; }
+        .grid-cell:nth-child(18) .clear-tile { background-position: 50% 75%; }
+        .grid-cell:nth-child(19) .clear-tile { background-position: 75% 75%; }
+        .grid-cell:nth-child(20) .clear-tile { background-position: 100% 75%; }
+        .grid-cell:nth-child(21) .clear-tile { background-position: 0% 100%; }
+        .grid-cell:nth-child(22) .clear-tile { background-position: 25% 100%; }
+        .grid-cell:nth-child(23) .clear-tile { background-position: 50% 100%; }
+        .grid-cell:nth-child(24) .clear-tile { background-position: 75% 100%; }
+        .grid-cell:nth-child(25) .clear-tile { background-position: 100% 100%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pixelated"></div>
+        <div class="grid">
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+            <div class="grid-cell"><div class="clear-tile"></div></div>
+        </div>
+    </div>
+</body>
+</html>

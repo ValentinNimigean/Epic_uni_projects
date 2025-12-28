@@ -1,0 +1,808 @@
+=== Generalized Fermat’s Algorithm Log ===
+
+
+----------------------------------------
+Trying k = 1
+k * n = 1234567
+t0 = floor( sqrt(k*n) ) = 1111
+Testing t from 1112 to 1115
+  t = 1112, t^2 = 1236544, t^2 - k*n = 1977  (not a square)
+  t = 1113, t^2 = 1238769, t^2 - k*n = 4202  (not a square)
+  t = 1114, t^2 = 1240996, t^2 - k*n = 6429  (not a square)
+  t = 1115, t^2 = 1243225, t^2 - k*n = 8658  (not a square)
+No perfect squares found for k = 1. Continuing...
+
+----------------------------------------
+Trying k = 2
+k * n = 2469134
+t0 = floor( sqrt(k*n) ) = 1571
+Testing t from 1572 to 1575
+  t = 1572, t^2 = 2471184, t^2 - k*n = 2050  (not a square)
+  t = 1573, t^2 = 2474329, t^2 - k*n = 5195  (not a square)
+  t = 1574, t^2 = 2477476, t^2 - k*n = 8342  (not a square)
+  t = 1575, t^2 = 2480625, t^2 - k*n = 11491  (not a square)
+No perfect squares found for k = 2. Continuing...
+
+----------------------------------------
+Trying k = 3
+k * n = 3703701
+t0 = floor( sqrt(k*n) ) = 1924
+Testing t from 1925 to 1928
+  t = 1925, t^2 = 3705625, t^2 - k*n = 1924  (not a square)
+  t = 1926, t^2 = 3709476, t^2 - k*n = 5775  (not a square)
+  t = 1927, t^2 = 3713329, t^2 - k*n = 9628  (not a square)
+  t = 1928, t^2 = 3717184, t^2 - k*n = 13483  (not a square)
+No perfect squares found for k = 3. Continuing...
+
+----------------------------------------
+Trying k = 4
+k * n = 4938268
+t0 = floor( sqrt(k*n) ) = 2222
+Testing t from 2223 to 2226
+  t = 2223, t^2 = 4941729, t^2 - k*n = 3461  (not a square)
+  t = 2224, t^2 = 4946176, t^2 - k*n = 7908  (not a square)
+  t = 2225, t^2 = 4950625, t^2 - k*n = 12357  (not a square)
+  t = 2226, t^2 = 4955076, t^2 - k*n = 16808  (not a square)
+No perfect squares found for k = 4. Continuing...
+
+----------------------------------------
+Trying k = 5
+k * n = 6172835
+t0 = floor( sqrt(k*n) ) = 2484
+Testing t from 2485 to 2488
+  t = 2485, t^2 = 6175225, t^2 - k*n = 2390  (not a square)
+  t = 2486, t^2 = 6180196, t^2 - k*n = 7361  (not a square)
+  t = 2487, t^2 = 6185169, t^2 - k*n = 12334  (not a square)
+  t = 2488, t^2 = 6190144, t^2 - k*n = 17309  (not a square)
+No perfect squares found for k = 5. Continuing...
+
+----------------------------------------
+Trying k = 6
+k * n = 7407402
+t0 = floor( sqrt(k*n) ) = 2721
+Testing t from 2722 to 2725
+  t = 2722, t^2 = 7409284, t^2 - k*n = 1882  (not a square)
+  t = 2723, t^2 = 7414729, t^2 - k*n = 7327  (not a square)
+  t = 2724, t^2 = 7420176, t^2 - k*n = 12774  (not a square)
+  t = 2725, t^2 = 7425625, t^2 - k*n = 18223  (not a square)
+No perfect squares found for k = 6. Continuing...
+
+----------------------------------------
+Trying k = 7
+k * n = 8641969
+t0 = floor( sqrt(k*n) ) = 2939
+Testing t from 2940 to 2943
+  t = 2940, t^2 = 8643600, t^2 - k*n = 1631  (not a square)
+  t = 2941, t^2 = 8649481, t^2 - k*n = 7512  (not a square)
+  t = 2942, t^2 = 8655364, t^2 - k*n = 13395  (not a square)
+  t = 2943, t^2 = 8661249, t^2 - k*n = 19280  (not a square)
+No perfect squares found for k = 7. Continuing...
+
+----------------------------------------
+Trying k = 8
+k * n = 9876536
+t0 = floor( sqrt(k*n) ) = 3142
+Testing t from 3143 to 3146
+  t = 3143, t^2 = 9878449, t^2 - k*n = 1913  (not a square)
+  t = 3144, t^2 = 9884736, t^2 - k*n = 8200  (not a square)
+  t = 3145, t^2 = 9891025, t^2 - k*n = 14489  (not a square)
+  t = 3146, t^2 = 9897316, t^2 - k*n = 20780  (not a square)
+No perfect squares found for k = 8. Continuing...
+
+----------------------------------------
+Trying k = 9
+k * n = 11111103
+t0 = floor( sqrt(k*n) ) = 3333
+Testing t from 3334 to 3337
+  t = 3334, t^2 = 11115556, t^2 - k*n = 4453  (not a square)
+  t = 3335, t^2 = 11122225, t^2 - k*n = 11122  (not a square)
+  t = 3336, t^2 = 11128896, t^2 - k*n = 17793  (not a square)
+  t = 3337, t^2 = 11135569, t^2 - k*n = 24466  (not a square)
+No perfect squares found for k = 9. Continuing...
+
+----------------------------------------
+Trying k = 10
+k * n = 12345670
+t0 = floor( sqrt(k*n) ) = 3513
+Testing t from 3514 to 3517
+  t = 3514, t^2 = 12348196, t^2 - k*n = 2526  (not a square)
+  t = 3515, t^2 = 12355225, t^2 - k*n = 9555  (not a square)
+  t = 3516, t^2 = 12362256, t^2 - k*n = 16586  (not a square)
+  t = 3517, t^2 = 12369289, t^2 - k*n = 23619  (not a square)
+No perfect squares found for k = 10. Continuing...
+
+----------------------------------------
+Trying k = 11
+k * n = 13580237
+t0 = floor( sqrt(k*n) ) = 3685
+Testing t from 3686 to 3689
+  t = 3686, t^2 = 13586596, t^2 - k*n = 6359  (not a square)
+  t = 3687, t^2 = 13593969, t^2 - k*n = 13732  (not a square)
+  t = 3688, t^2 = 13601344, t^2 - k*n = 21107  (not a square)
+  t = 3689, t^2 = 13608721, t^2 - k*n = 28484  (not a square)
+No perfect squares found for k = 11. Continuing...
+
+----------------------------------------
+Trying k = 12
+k * n = 14814804
+t0 = floor( sqrt(k*n) ) = 3849
+Testing t from 3850 to 3853
+  t = 3850, t^2 = 14822500, t^2 - k*n = 7696  (not a square)
+  t = 3851, t^2 = 14830201, t^2 - k*n = 15397  (not a square)
+  t = 3852, t^2 = 14837904, t^2 - k*n = 23100  (not a square)
+  t = 3853, t^2 = 14845609, t^2 - k*n = 30805  (not a square)
+No perfect squares found for k = 12. Continuing...
+
+----------------------------------------
+Trying k = 13
+k * n = 16049371
+t0 = floor( sqrt(k*n) ) = 4006
+Testing t from 4007 to 4010
+  t = 4007, t^2 = 16056049, t^2 - k*n = 6678  (not a square)
+  t = 4008, t^2 = 16064064, t^2 - k*n = 14693  (not a square)
+  t = 4009, t^2 = 16072081, t^2 - k*n = 22710  (not a square)
+  t = 4010, t^2 = 16080100, t^2 - k*n = 30729  (not a square)
+No perfect squares found for k = 13. Continuing...
+
+----------------------------------------
+Trying k = 14
+k * n = 17283938
+t0 = floor( sqrt(k*n) ) = 4157
+Testing t from 4158 to 4161
+  t = 4158, t^2 = 17288964, t^2 - k*n = 5026  (not a square)
+  t = 4159, t^2 = 17297281, t^2 - k*n = 13343  (not a square)
+  t = 4160, t^2 = 17305600, t^2 - k*n = 21662  (not a square)
+  t = 4161, t^2 = 17313921, t^2 - k*n = 29983  (not a square)
+No perfect squares found for k = 14. Continuing...
+
+----------------------------------------
+Trying k = 15
+k * n = 18518505
+t0 = floor( sqrt(k*n) ) = 4303
+Testing t from 4304 to 4307
+  t = 4304, t^2 = 18524416, t^2 - k*n = 5911  (not a square)
+  t = 4305, t^2 = 18533025, t^2 - k*n = 14520  (not a square)
+  t = 4306, t^2 = 18541636, t^2 - k*n = 23131  (not a square)
+  t = 4307, t^2 = 18550249, t^2 - k*n = 31744  (not a square)
+No perfect squares found for k = 15. Continuing...
+
+----------------------------------------
+Trying k = 16
+k * n = 19753072
+t0 = floor( sqrt(k*n) ) = 4444
+Testing t from 4445 to 4448
+  t = 4445, t^2 = 19758025, t^2 - k*n = 4953  (not a square)
+  t = 4446, t^2 = 19766916, t^2 - k*n = 13844  (not a square)
+  t = 4447, t^2 = 19775809, t^2 - k*n = 22737  (not a square)
+  t = 4448, t^2 = 19784704, t^2 - k*n = 31632  (not a square)
+No perfect squares found for k = 16. Continuing...
+
+----------------------------------------
+Trying k = 17
+k * n = 20987639
+t0 = floor( sqrt(k*n) ) = 4581
+Testing t from 4582 to 4585
+  t = 4582, t^2 = 20994724, t^2 - k*n = 7085  (not a square)
+  t = 4583, t^2 = 21003889, t^2 - k*n = 16250  (not a square)
+  t = 4584, t^2 = 21013056, t^2 - k*n = 25417  (not a square)
+  t = 4585, t^2 = 21022225, t^2 - k*n = 34586  (not a square)
+No perfect squares found for k = 17. Continuing...
+
+----------------------------------------
+Trying k = 18
+k * n = 22222206
+t0 = floor( sqrt(k*n) ) = 4714
+Testing t from 4715 to 4718
+  t = 4715, t^2 = 22231225, t^2 - k*n = 9019  (not a square)
+  t = 4716, t^2 = 22240656, t^2 - k*n = 18450  (not a square)
+  t = 4717, t^2 = 22250089, t^2 - k*n = 27883  (not a square)
+  t = 4718, t^2 = 22259524, t^2 - k*n = 37318  (not a square)
+No perfect squares found for k = 18. Continuing...
+
+----------------------------------------
+Trying k = 19
+k * n = 23456773
+t0 = floor( sqrt(k*n) ) = 4843
+Testing t from 4844 to 4847
+  t = 4844, t^2 = 23464336, t^2 - k*n = 7563  (not a square)
+  t = 4845, t^2 = 23474025, t^2 - k*n = 17252  (not a square)
+  t = 4846, t^2 = 23483716, t^2 - k*n = 26943  (not a square)
+  t = 4847, t^2 = 23493409, t^2 - k*n = 36636  (not a square)
+No perfect squares found for k = 19. Continuing...
+
+----------------------------------------
+Trying k = 20
+k * n = 24691340
+t0 = floor( sqrt(k*n) ) = 4969
+Testing t from 4970 to 4973
+  t = 4970, t^2 = 24700900, t^2 - k*n = 9560  (not a square)
+  t = 4971, t^2 = 24710841, t^2 - k*n = 19501  (not a square)
+  t = 4972, t^2 = 24720784, t^2 - k*n = 29444  (not a square)
+  t = 4973, t^2 = 24730729, t^2 - k*n = 39389  (not a square)
+No perfect squares found for k = 20. Continuing...
+
+----------------------------------------
+Trying k = 21
+k * n = 25925907
+t0 = floor( sqrt(k*n) ) = 5091
+Testing t from 5092 to 5095
+  t = 5092, t^2 = 25928464, t^2 - k*n = 2557  (not a square)
+  t = 5093, t^2 = 25938649, t^2 - k*n = 12742  (not a square)
+  t = 5094, t^2 = 25948836, t^2 - k*n = 22929  (not a square)
+  t = 5095, t^2 = 25959025, t^2 - k*n = 33118  (not a square)
+No perfect squares found for k = 21. Continuing...
+
+----------------------------------------
+Trying k = 22
+k * n = 27160474
+t0 = floor( sqrt(k*n) ) = 5211
+Testing t from 5212 to 5215
+  t = 5212, t^2 = 27164944, t^2 - k*n = 4470  (not a square)
+  t = 5213, t^2 = 27175369, t^2 - k*n = 14895  (not a square)
+  t = 5214, t^2 = 27185796, t^2 - k*n = 25322  (not a square)
+  t = 5215, t^2 = 27196225, t^2 - k*n = 35751  (not a square)
+No perfect squares found for k = 22. Continuing...
+
+----------------------------------------
+Trying k = 23
+k * n = 28395041
+t0 = floor( sqrt(k*n) ) = 5328
+Testing t from 5329 to 5332
+  t = 5329, t^2 = 28398241, t^2 - k*n = 3200  (not a square)
+  t = 5330, t^2 = 28408900, t^2 - k*n = 13859  (not a square)
+  t = 5331, t^2 = 28419561, t^2 - k*n = 24520  (not a square)
+  t = 5332, t^2 = 28430224, t^2 - k*n = 35183  (not a square)
+No perfect squares found for k = 23. Continuing...
+
+----------------------------------------
+Trying k = 24
+k * n = 29629608
+t0 = floor( sqrt(k*n) ) = 5443
+Testing t from 5444 to 5447
+  t = 5444, t^2 = 29637136, t^2 - k*n = 7528  (not a square)
+  t = 5445, t^2 = 29648025, t^2 - k*n = 18417  (not a square)
+  t = 5446, t^2 = 29658916, t^2 - k*n = 29308  (not a square)
+  t = 5447, t^2 = 29669809, t^2 - k*n = 40201  (not a square)
+No perfect squares found for k = 24. Continuing...
+
+----------------------------------------
+Trying k = 25
+k * n = 30864175
+t0 = floor( sqrt(k*n) ) = 5555
+Testing t from 5556 to 5559
+  t = 5556, t^2 = 30869136, t^2 - k*n = 4961  (not a square)
+  t = 5557, t^2 = 30880249, t^2 - k*n = 16074  (not a square)
+  t = 5558, t^2 = 30891364, t^2 - k*n = 27189  (not a square)
+  t = 5559, t^2 = 30902481, t^2 - k*n = 38306  (not a square)
+No perfect squares found for k = 25. Continuing...
+
+----------------------------------------
+Trying k = 26
+k * n = 32098742
+t0 = floor( sqrt(k*n) ) = 5665
+Testing t from 5666 to 5669
+  t = 5666, t^2 = 32103556, t^2 - k*n = 4814  (not a square)
+  t = 5667, t^2 = 32114889, t^2 - k*n = 16147  (not a square)
+  t = 5668, t^2 = 32126224, t^2 - k*n = 27482  (not a square)
+  t = 5669, t^2 = 32137561, t^2 - k*n = 38819  (not a square)
+No perfect squares found for k = 26. Continuing...
+
+----------------------------------------
+Trying k = 27
+k * n = 33333309
+t0 = floor( sqrt(k*n) ) = 5773
+Testing t from 5774 to 5777
+  t = 5774, t^2 = 33339076, t^2 - k*n = 5767  (not a square)
+  t = 5775, t^2 = 33350625, t^2 - k*n = 17316  (not a square)
+  t = 5776, t^2 = 33362176, t^2 - k*n = 28867  (not a square)
+  t = 5777, t^2 = 33373729, t^2 - k*n = 40420  (not a square)
+No perfect squares found for k = 27. Continuing...
+
+----------------------------------------
+Trying k = 28
+k * n = 34567876
+t0 = floor( sqrt(k*n) ) = 5879
+Testing t from 5880 to 5883
+  t = 5880, t^2 = 34574400, t^2 - k*n = 6524  (not a square)
+  t = 5881, t^2 = 34586161, t^2 - k*n = 18285  (not a square)
+  t = 5882, t^2 = 34597924, t^2 - k*n = 30048  (not a square)
+  t = 5883, t^2 = 34609689, t^2 - k*n = 41813  (not a square)
+No perfect squares found for k = 28. Continuing...
+
+----------------------------------------
+Trying k = 29
+k * n = 35802443
+t0 = floor( sqrt(k*n) ) = 5983
+Testing t from 5984 to 5987
+  t = 5984, t^2 = 35808256, t^2 - k*n = 5813  (not a square)
+  t = 5985, t^2 = 35820225, t^2 - k*n = 17782  (not a square)
+  t = 5986, t^2 = 35832196, t^2 - k*n = 29753  (not a square)
+  t = 5987, t^2 = 35844169, t^2 - k*n = 41726  (not a square)
+No perfect squares found for k = 29. Continuing...
+
+----------------------------------------
+Trying k = 30
+k * n = 37037010
+t0 = floor( sqrt(k*n) ) = 6085
+Testing t from 6086 to 6089
+  t = 6086, t^2 = 37039396, t^2 - k*n = 2386  (not a square)
+  t = 6087, t^2 = 37051569, t^2 - k*n = 14559  (not a square)
+  t = 6088, t^2 = 37063744, t^2 - k*n = 26734  (not a square)
+  t = 6089, t^2 = 37075921, t^2 - k*n = 38911  (not a square)
+No perfect squares found for k = 30. Continuing...
+
+----------------------------------------
+Trying k = 31
+k * n = 38271577
+t0 = floor( sqrt(k*n) ) = 6186
+Testing t from 6187 to 6190
+  t = 6187, t^2 = 38278969, t^2 - k*n = 7392  (not a square)
+  t = 6188, t^2 = 38291344, t^2 - k*n = 19767  (not a square)
+  t = 6189, t^2 = 38303721, t^2 - k*n = 32144  (not a square)
+  t = 6190, t^2 = 38316100, t^2 - k*n = 44523  (not a square)
+No perfect squares found for k = 31. Continuing...
+
+----------------------------------------
+Trying k = 32
+k * n = 39506144
+t0 = floor( sqrt(k*n) ) = 6285
+Testing t from 6286 to 6289
+  t = 6286, t^2 = 39513796, t^2 - k*n = 7652  (not a square)
+  t = 6287, t^2 = 39526369, t^2 - k*n = 20225  (not a square)
+  t = 6288, t^2 = 39538944, t^2 - k*n = 32800  (not a square)
+  t = 6289, t^2 = 39551521, t^2 - k*n = 45377  (not a square)
+No perfect squares found for k = 32. Continuing...
+
+----------------------------------------
+Trying k = 33
+k * n = 40740711
+t0 = floor( sqrt(k*n) ) = 6382
+Testing t from 6383 to 6386
+  t = 6383, t^2 = 40742689, t^2 - k*n = 1978  (not a square)
+  t = 6384, t^2 = 40755456, t^2 - k*n = 14745  (not a square)
+  t = 6385, t^2 = 40768225, t^2 - k*n = 27514  (not a square)
+  t = 6386, t^2 = 40780996, t^2 - k*n = 40285  (not a square)
+No perfect squares found for k = 33. Continuing...
+
+----------------------------------------
+Trying k = 34
+k * n = 41975278
+t0 = floor( sqrt(k*n) ) = 6478
+Testing t from 6479 to 6482
+  t = 6479, t^2 = 41977441, t^2 - k*n = 2163  (not a square)
+  t = 6480, t^2 = 41990400, t^2 - k*n = 15122  (not a square)
+  t = 6481, t^2 = 42003361, t^2 - k*n = 28083  (not a square)
+  t = 6482, t^2 = 42016324, t^2 - k*n = 41046  (not a square)
+No perfect squares found for k = 34. Continuing...
+
+----------------------------------------
+Trying k = 35
+k * n = 43209845
+t0 = floor( sqrt(k*n) ) = 6573
+Testing t from 6574 to 6577
+  t = 6574, t^2 = 43217476, t^2 - k*n = 7631  (not a square)
+  t = 6575, t^2 = 43230625, t^2 - k*n = 20780  (not a square)
+  t = 6576, t^2 = 43243776, t^2 - k*n = 33931  (not a square)
+  t = 6577, t^2 = 43256929, t^2 - k*n = 47084  (not a square)
+No perfect squares found for k = 35. Continuing...
+
+----------------------------------------
+Trying k = 36
+k * n = 44444412
+t0 = floor( sqrt(k*n) ) = 6666
+Testing t from 6667 to 6670
+  t = 6667, t^2 = 44448889, t^2 - k*n = 4477  (not a square)
+  t = 6668, t^2 = 44462224, t^2 - k*n = 17812  (not a square)
+  t = 6669, t^2 = 44475561, t^2 - k*n = 31149  (not a square)
+  t = 6670, t^2 = 44488900, t^2 - k*n = 44488  (not a square)
+No perfect squares found for k = 36. Continuing...
+
+----------------------------------------
+Trying k = 37
+k * n = 45678979
+t0 = floor( sqrt(k*n) ) = 6758
+Testing t from 6759 to 6762
+  t = 6759, t^2 = 45684081, t^2 - k*n = 5102  (not a square)
+  t = 6760, t^2 = 45697600, t^2 - k*n = 18621  (not a square)
+  t = 6761, t^2 = 45711121, t^2 - k*n = 32142  (not a square)
+  t = 6762, t^2 = 45724644, t^2 - k*n = 45665  (not a square)
+No perfect squares found for k = 37. Continuing...
+
+----------------------------------------
+Trying k = 38
+k * n = 46913546
+t0 = floor( sqrt(k*n) ) = 6849
+Testing t from 6850 to 6853
+  t = 6850, t^2 = 46922500, t^2 - k*n = 8954  (not a square)
+  t = 6851, t^2 = 46936201, t^2 - k*n = 22655  (not a square)
+  t = 6852, t^2 = 46949904, t^2 - k*n = 36358  (not a square)
+  t = 6853, t^2 = 46963609, t^2 - k*n = 50063  (not a square)
+No perfect squares found for k = 38. Continuing...
+
+----------------------------------------
+Trying k = 39
+k * n = 48148113
+t0 = floor( sqrt(k*n) ) = 6938
+Testing t from 6939 to 6942
+  t = 6939, t^2 = 48149721, t^2 - k*n = 1608  (not a square)
+  t = 6940, t^2 = 48163600, t^2 - k*n = 15487  (not a square)
+  t = 6941, t^2 = 48177481, t^2 - k*n = 29368  (not a square)
+  t = 6942, t^2 = 48191364, t^2 - k*n = 43251  (not a square)
+No perfect squares found for k = 39. Continuing...
+
+----------------------------------------
+Trying k = 40
+k * n = 49382680
+t0 = floor( sqrt(k*n) ) = 7027
+Testing t from 7028 to 7031
+  t = 7028, t^2 = 49392784, t^2 - k*n = 10104  (not a square)
+  t = 7029, t^2 = 49406841, t^2 - k*n = 24161  (not a square)
+  t = 7030, t^2 = 49420900, t^2 - k*n = 38220  (not a square)
+  t = 7031, t^2 = 49434961, t^2 - k*n = 52281  (not a square)
+No perfect squares found for k = 40. Continuing...
+
+----------------------------------------
+Trying k = 41
+k * n = 50617247
+t0 = floor( sqrt(k*n) ) = 7114
+Testing t from 7115 to 7118
+  t = 7115, t^2 = 50623225, t^2 - k*n = 5978  (not a square)
+  t = 7116, t^2 = 50637456, t^2 - k*n = 20209  (not a square)
+  t = 7117, t^2 = 50651689, t^2 - k*n = 34442  (not a square)
+  t = 7118, t^2 = 50665924, t^2 - k*n = 48677  (not a square)
+No perfect squares found for k = 41. Continuing...
+
+----------------------------------------
+Trying k = 42
+k * n = 51851814
+t0 = floor( sqrt(k*n) ) = 7200
+Testing t from 7201 to 7204
+  t = 7201, t^2 = 51854401, t^2 - k*n = 2587  (not a square)
+  t = 7202, t^2 = 51868804, t^2 - k*n = 16990  (not a square)
+  t = 7203, t^2 = 51883209, t^2 - k*n = 31395  (not a square)
+  t = 7204, t^2 = 51897616, t^2 - k*n = 45802  (not a square)
+No perfect squares found for k = 42. Continuing...
+
+----------------------------------------
+Trying k = 43
+k * n = 53086381
+t0 = floor( sqrt(k*n) ) = 7286
+Testing t from 7287 to 7290
+  t = 7287, t^2 = 53100369, t^2 - k*n = 13988  (not a square)
+  t = 7288, t^2 = 53114944, t^2 - k*n = 28563  (not a square)
+  t = 7289, t^2 = 53129521, t^2 - k*n = 43140  (not a square)
+  t = 7290, t^2 = 53144100, t^2 - k*n = 57719  (not a square)
+No perfect squares found for k = 43. Continuing...
+
+----------------------------------------
+Trying k = 44
+k * n = 54320948
+t0 = floor( sqrt(k*n) ) = 7370
+Testing t from 7371 to 7374
+  t = 7371, t^2 = 54331641, t^2 - k*n = 10693  (not a square)
+  t = 7372, t^2 = 54346384, t^2 - k*n = 25436  (not a square)
+  t = 7373, t^2 = 54361129, t^2 - k*n = 40181  (not a square)
+  t = 7374, t^2 = 54375876, t^2 - k*n = 54928  (not a square)
+No perfect squares found for k = 44. Continuing...
+
+----------------------------------------
+Trying k = 45
+k * n = 55555515
+t0 = floor( sqrt(k*n) ) = 7453
+Testing t from 7454 to 7457
+  t = 7454, t^2 = 55562116, t^2 - k*n = 6601  (not a square)
+  t = 7455, t^2 = 55577025, t^2 - k*n = 21510  (not a square)
+  t = 7456, t^2 = 55591936, t^2 - k*n = 36421  (not a square)
+  t = 7457, t^2 = 55606849, t^2 - k*n = 51334  (not a square)
+No perfect squares found for k = 45. Continuing...
+
+----------------------------------------
+Trying k = 46
+k * n = 56790082
+t0 = floor( sqrt(k*n) ) = 7535
+Testing t from 7536 to 7539
+  t = 7536, t^2 = 56791296, t^2 - k*n = 1214  (not a square)
+  t = 7537, t^2 = 56806369, t^2 - k*n = 16287  (not a square)
+  t = 7538, t^2 = 56821444, t^2 - k*n = 31362  (not a square)
+  t = 7539, t^2 = 56836521, t^2 - k*n = 46439  (not a square)
+No perfect squares found for k = 46. Continuing...
+
+----------------------------------------
+Trying k = 47
+k * n = 58024649
+t0 = floor( sqrt(k*n) ) = 7617
+Testing t from 7618 to 7621
+  t = 7618, t^2 = 58033924, t^2 - k*n = 9275  (not a square)
+  t = 7619, t^2 = 58049161, t^2 - k*n = 24512  (not a square)
+  t = 7620, t^2 = 58064400, t^2 - k*n = 39751  (not a square)
+  t = 7621, t^2 = 58079641, t^2 - k*n = 54992  (not a square)
+No perfect squares found for k = 47. Continuing...
+
+----------------------------------------
+Trying k = 48
+k * n = 59259216
+t0 = floor( sqrt(k*n) ) = 7698
+Testing t from 7699 to 7702
+  t = 7699, t^2 = 59274601, t^2 - k*n = 15385  (not a square)
+  t = 7700, t^2 = 59290000, t^2 - k*n = 30784  (not a square)
+  t = 7701, t^2 = 59305401, t^2 - k*n = 46185  (not a square)
+  t = 7702, t^2 = 59320804, t^2 - k*n = 61588  (not a square)
+No perfect squares found for k = 48. Continuing...
+
+----------------------------------------
+Trying k = 49
+k * n = 60493783
+t0 = floor( sqrt(k*n) ) = 7777
+Testing t from 7778 to 7781
+  t = 7778, t^2 = 60497284, t^2 - k*n = 3501  (not a square)
+  t = 7779, t^2 = 60512841, t^2 - k*n = 19058  (not a square)
+  t = 7780, t^2 = 60528400, t^2 - k*n = 34617  (not a square)
+  t = 7781, t^2 = 60543961, t^2 - k*n = 50178  (not a square)
+No perfect squares found for k = 49. Continuing...
+
+----------------------------------------
+Trying k = 50
+k * n = 61728350
+t0 = floor( sqrt(k*n) ) = 7856
+Testing t from 7857 to 7860
+  t = 7857, t^2 = 61732449, t^2 - k*n = 4099  (not a square)
+  t = 7858, t^2 = 61748164, t^2 - k*n = 19814  (not a square)
+  t = 7859, t^2 = 61763881, t^2 - k*n = 35531  (not a square)
+  t = 7860, t^2 = 61779600, t^2 - k*n = 51250  (not a square)
+No perfect squares found for k = 50. Continuing...
+
+----------------------------------------
+Trying k = 51
+k * n = 62962917
+t0 = floor( sqrt(k*n) ) = 7934
+Testing t from 7935 to 7938
+  t = 7935, t^2 = 62964225, t^2 - k*n = 1308  (not a square)
+  t = 7936, t^2 = 62980096, t^2 - k*n = 17179  (not a square)
+  t = 7937, t^2 = 62995969, t^2 - k*n = 33052  (not a square)
+  t = 7938, t^2 = 63011844, t^2 - k*n = 48927  (not a square)
+No perfect squares found for k = 51. Continuing...
+
+----------------------------------------
+Trying k = 52
+k * n = 64197484
+t0 = floor( sqrt(k*n) ) = 8012
+Testing t from 8013 to 8016
+  t = 8013, t^2 = 64208169, t^2 - k*n = 10685  (not a square)
+  t = 8014, t^2 = 64224196, t^2 - k*n = 26712  (not a square)
+  t = 8015, t^2 = 64240225, t^2 - k*n = 42741  (not a square)
+  t = 8016, t^2 = 64256256, t^2 - k*n = 58772  (not a square)
+No perfect squares found for k = 52. Continuing...
+
+----------------------------------------
+Trying k = 53
+k * n = 65432051
+t0 = floor( sqrt(k*n) ) = 8089
+Testing t from 8090 to 8093
+  t = 8090, t^2 = 65448100, t^2 - k*n = 16049  (not a square)
+  t = 8091, t^2 = 65464281, t^2 - k*n = 32230  (not a square)
+  t = 8092, t^2 = 65480464, t^2 - k*n = 48413  (not a square)
+  t = 8093, t^2 = 65496649, t^2 - k*n = 64598  (not a square)
+No perfect squares found for k = 53. Continuing...
+
+----------------------------------------
+Trying k = 54
+k * n = 66666618
+t0 = floor( sqrt(k*n) ) = 8164
+Testing t from 8165 to 8168
+  t = 8165, t^2 = 66667225, t^2 - k*n = 607  (not a square)
+  t = 8166, t^2 = 66683556, t^2 - k*n = 16938  (not a square)
+  t = 8167, t^2 = 66699889, t^2 - k*n = 33271  (not a square)
+  t = 8168, t^2 = 66716224, t^2 - k*n = 49606  (not a square)
+No perfect squares found for k = 54. Continuing...
+
+----------------------------------------
+Trying k = 55
+k * n = 67901185
+t0 = floor( sqrt(k*n) ) = 8240
+Testing t from 8241 to 8244
+  t = 8241, t^2 = 67914081, t^2 - k*n = 12896  (not a square)
+  t = 8242, t^2 = 67930564, t^2 - k*n = 29379  (not a square)
+  t = 8243, t^2 = 67947049, t^2 - k*n = 45864  (not a square)
+  t = 8244, t^2 = 67963536, t^2 - k*n = 62351  (not a square)
+No perfect squares found for k = 55. Continuing...
+
+----------------------------------------
+Trying k = 56
+k * n = 69135752
+t0 = floor( sqrt(k*n) ) = 8314
+Testing t from 8315 to 8318
+  t = 8315, t^2 = 69139225, t^2 - k*n = 3473  (not a square)
+  t = 8316, t^2 = 69155856, t^2 - k*n = 20104  (not a square)
+  t = 8317, t^2 = 69172489, t^2 - k*n = 36737  (not a square)
+  t = 8318, t^2 = 69189124, t^2 - k*n = 53372  (not a square)
+No perfect squares found for k = 56. Continuing...
+
+----------------------------------------
+Trying k = 57
+k * n = 70370319
+t0 = floor( sqrt(k*n) ) = 8388
+Testing t from 8389 to 8392
+  t = 8389, t^2 = 70375321, t^2 - k*n = 5002  (not a square)
+  t = 8390, t^2 = 70392100, t^2 - k*n = 21781  (not a square)
+  t = 8391, t^2 = 70408881, t^2 - k*n = 38562  (not a square)
+  t = 8392, t^2 = 70425664, t^2 - k*n = 55345  (not a square)
+No perfect squares found for k = 57. Continuing...
+
+----------------------------------------
+Trying k = 58
+k * n = 71604886
+t0 = floor( sqrt(k*n) ) = 8461
+Testing t from 8462 to 8465
+  t = 8462, t^2 = 71605444, t^2 - k*n = 558  (not a square)
+  t = 8463, t^2 = 71622369, t^2 - k*n = 17483  (not a square)
+  t = 8464, t^2 = 71639296, t^2 - k*n = 34410  (not a square)
+  t = 8465, t^2 = 71656225, t^2 - k*n = 51339  (not a square)
+No perfect squares found for k = 58. Continuing...
+
+----------------------------------------
+Trying k = 59
+k * n = 72839453
+t0 = floor( sqrt(k*n) ) = 8534
+Testing t from 8535 to 8538
+  t = 8535, t^2 = 72846225, t^2 - k*n = 6772  (not a square)
+  t = 8536, t^2 = 72863296, t^2 - k*n = 23843  (not a square)
+  t = 8537, t^2 = 72880369, t^2 - k*n = 40916  (not a square)
+  t = 8538, t^2 = 72897444, t^2 - k*n = 57991  (not a square)
+No perfect squares found for k = 59. Continuing...
+
+----------------------------------------
+Trying k = 60
+k * n = 74074020
+t0 = floor( sqrt(k*n) ) = 8606
+Testing t from 8607 to 8610
+  t = 8607, t^2 = 74080449, t^2 - k*n = 6429  (not a square)
+  t = 8608, t^2 = 74097664, t^2 - k*n = 23644  (not a square)
+  t = 8609, t^2 = 74114881, t^2 - k*n = 40861  (not a square)
+  t = 8610, t^2 = 74132100, t^2 - k*n = 58080  (not a square)
+No perfect squares found for k = 60. Continuing...
+
+----------------------------------------
+Trying k = 61
+k * n = 75308587
+t0 = floor( sqrt(k*n) ) = 8678
+Testing t from 8679 to 8682
+  t = 8679, t^2 = 75325041, t^2 - k*n = 16454  (not a square)
+  t = 8680, t^2 = 75342400, t^2 - k*n = 33813  (not a square)
+  t = 8681, t^2 = 75359761, t^2 - k*n = 51174  (not a square)
+  t = 8682, t^2 = 75377124, t^2 - k*n = 68537  (not a square)
+No perfect squares found for k = 61. Continuing...
+
+----------------------------------------
+Trying k = 62
+k * n = 76543154
+t0 = floor( sqrt(k*n) ) = 8748
+Testing t from 8749 to 8752
+  t = 8749, t^2 = 76545001, t^2 - k*n = 1847  (not a square)
+  t = 8750, t^2 = 76562500, t^2 - k*n = 19346  (not a square)
+  t = 8751, t^2 = 76580001, t^2 - k*n = 36847  (not a square)
+  t = 8752, t^2 = 76597504, t^2 - k*n = 54350  (not a square)
+No perfect squares found for k = 62. Continuing...
+
+----------------------------------------
+Trying k = 63
+k * n = 77777721
+t0 = floor( sqrt(k*n) ) = 8819
+Testing t from 8820 to 8823
+  t = 8820, t^2 = 77792400, t^2 - k*n = 14679  (not a square)
+  t = 8821, t^2 = 77810041, t^2 - k*n = 32320  (not a square)
+  t = 8822, t^2 = 77827684, t^2 - k*n = 49963  (not a square)
+  t = 8823, t^2 = 77845329, t^2 - k*n = 67608  (not a square)
+No perfect squares found for k = 63. Continuing...
+
+----------------------------------------
+Trying k = 64
+k * n = 79012288
+t0 = floor( sqrt(k*n) ) = 8888
+Testing t from 8889 to 8892
+  t = 8889, t^2 = 79014321, t^2 - k*n = 2033  (not a square)
+  t = 8890, t^2 = 79032100, t^2 - k*n = 19812  (not a square)
+  t = 8891, t^2 = 79049881, t^2 - k*n = 37593  (not a square)
+  t = 8892, t^2 = 79067664, t^2 - k*n = 55376  (not a square)
+No perfect squares found for k = 64. Continuing...
+
+----------------------------------------
+Trying k = 65
+k * n = 80246855
+t0 = floor( sqrt(k*n) ) = 8958
+Testing t from 8959 to 8962
+  t = 8959, t^2 = 80263681, t^2 - k*n = 16826  (not a square)
+  t = 8960, t^2 = 80281600, t^2 - k*n = 34745  (not a square)
+  t = 8961, t^2 = 80299521, t^2 - k*n = 52666  (not a square)
+  t = 8962, t^2 = 80317444, t^2 - k*n = 70589  (not a square)
+No perfect squares found for k = 65. Continuing...
+
+----------------------------------------
+Trying k = 66
+k * n = 81481422
+t0 = floor( sqrt(k*n) ) = 9026
+Testing t from 9027 to 9030
+  t = 9027, t^2 = 81486729, t^2 - k*n = 5307  (not a square)
+  t = 9028, t^2 = 81504784, t^2 - k*n = 23362  (not a square)
+  t = 9029, t^2 = 81522841, t^2 - k*n = 41419  (not a square)
+  t = 9030, t^2 = 81540900, t^2 - k*n = 59478  (not a square)
+No perfect squares found for k = 66. Continuing...
+
+----------------------------------------
+Trying k = 67
+k * n = 82715989
+t0 = floor( sqrt(k*n) ) = 9094
+Testing t from 9095 to 9098
+  t = 9095, t^2 = 82719025, t^2 - k*n = 3036  (not a square)
+  t = 9096, t^2 = 82737216, t^2 - k*n = 21227  (not a square)
+  t = 9097, t^2 = 82755409, t^2 - k*n = 39420  (not a square)
+  t = 9098, t^2 = 82773604, t^2 - k*n = 57615  (not a square)
+No perfect squares found for k = 67. Continuing...
+
+----------------------------------------
+Trying k = 68
+k * n = 83950556
+t0 = floor( sqrt(k*n) ) = 9162
+Testing t from 9163 to 9166
+  t = 9163, t^2 = 83960569, t^2 - k*n = 10013  (not a square)
+  t = 9164, t^2 = 83978896, t^2 - k*n = 28340  (not a square)
+  t = 9165, t^2 = 83997225, t^2 - k*n = 46669  (not a square)
+  t = 9166, t^2 = 84015556, t^2 - k*n = 65000  (not a square)
+No perfect squares found for k = 68. Continuing...
+
+----------------------------------------
+Trying k = 69
+k * n = 85185123
+t0 = floor( sqrt(k*n) ) = 9229
+Testing t from 9230 to 9233
+  t = 9230, t^2 = 85192900, t^2 - k*n = 7777  (not a square)
+  t = 9231, t^2 = 85211361, t^2 - k*n = 26238  (not a square)
+  t = 9232, t^2 = 85229824, t^2 - k*n = 44701  (not a square)
+  t = 9233, t^2 = 85248289, t^2 - k*n = 63166  (not a square)
+No perfect squares found for k = 69. Continuing...
+
+----------------------------------------
+Trying k = 70
+k * n = 86419690
+t0 = floor( sqrt(k*n) ) = 9296
+Testing t from 9297 to 9300
+  t = 9297, t^2 = 86434209, t^2 - k*n = 14519  (not a square)
+  t = 9298, t^2 = 86452804, t^2 - k*n = 33114  (not a square)
+  t = 9299, t^2 = 86471401, t^2 - k*n = 51711  (not a square)
+  t = 9300, t^2 = 86490000, t^2 - k*n = 70310  (not a square)
+No perfect squares found for k = 70. Continuing...
+
+----------------------------------------
+Trying k = 71
+k * n = 87654257
+t0 = floor( sqrt(k*n) ) = 9362
+Testing t from 9363 to 9366
+  t = 9363, t^2 = 87665769, t^2 - k*n = 11512  (not a square)
+  t = 9364, t^2 = 87684496, t^2 - k*n = 30239  (not a square)
+  t = 9365, t^2 = 87703225, t^2 - k*n = 48968  (not a square)
+  t = 9366, t^2 = 87721956, t^2 - k*n = 67699  (not a square)
+No perfect squares found for k = 71. Continuing...
+
+----------------------------------------
+Trying k = 72
+k * n = 88888824
+t0 = floor( sqrt(k*n) ) = 9428
+Testing t from 9429 to 9432
+  t = 9429, t^2 = 88906041, t^2 - k*n = 17217  (not a square)
+  t = 9430, t^2 = 88924900, t^2 - k*n = 36076  (not a square)
+  t = 9431, t^2 = 88943761, t^2 - k*n = 54937  (not a square)
+  t = 9432, t^2 = 88962624, t^2 - k*n = 73800  (not a square)
+No perfect squares found for k = 72. Continuing...
+
+----------------------------------------
+Trying k = 73
+k * n = 90123391
+t0 = floor( sqrt(k*n) ) = 9493
+Testing t from 9494 to 9497
+  t = 9494, t^2 = 90136036, t^2 - k*n = 12645  (not a square)
+  t = 9495, t^2 = 90155025, t^2 - k*n = 31634  (not a square)
+  t = 9496, t^2 = 90174016, t^2 - k*n = 50625  --> PERFECT SQUARE FOUND! (s = 225)
+  (t - s) / k = 127
+  (t + s) = 9721
+  gcd(factor1, n) = 127
+
+*** Non-trivial factor found from factor1! ***

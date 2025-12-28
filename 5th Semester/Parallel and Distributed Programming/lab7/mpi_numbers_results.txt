@@ -1,0 +1,14 @@
+MPI Large Number Multiplication - Nodes: 8
+
+Digits 1000:
+  Naive: 32.23 ms
+  Karatsuba: 17.65 ms
+
+Digits 5000:
+  Naive: 650.52 ms
+  Karatsuba: 211.34 ms
+
+Digits 10000:
+  Naive: 2626.00 ms
+  Karatsuba: 655.81 ms
+

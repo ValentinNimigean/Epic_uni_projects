@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced Drag and Drop Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .draggable {
+     
+      background-color: #3498db;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      cursor: move;
+      user-select: none;
+    }
+    .draggable img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    nav {
+      background: #2ecc71;
+      padding: 10px;
+      color: white;
+      cursor: move;
+    }
+    p {
+      background: #e74c3c;
+      padding: 10px;
+      color: white;
+      cursor: move;
+    }
+  </style>
+</head>
+<body>
+  <div id="box" class="draggable">(div)</div>
+  <nav id="nav" class="draggable">(Nav)</nav>
+  <p id="text" class="draggable">(Text)</p>
+  <section id="section" class="draggable">(Section)</section>
+  <aside id="aside" class="draggable">(Aside)</aside>
+  <footer id="footer" class="draggable">(Footer)</footer>
+  <header id="header" class="draggable">(Header)</header>
+
+
+  <script>
+    function makeDraggable(element) {
+      let offsetX = 0, offsetY = 0, isDragging = false;
+      
+      element.style.left = Math.random() * (window.innerWidth - 150) + 'px';
+      element.style.top = Math.random() * (window.innerHeight - 150) + 'px';
+      
+      element.addEventListener('mousedown', function(e) {
+        offsetX = e.clientX - element.getBoundingClientRect().left;
+        offsetY = e.clientY - element.getBoundingClientRect().top;
+        isDragging = true;
+      });
+
+      document.addEventListener('mousemove', function(e) {
+        if (isDragging) {
+          element.style.left = (e.clientX - offsetX) + 'px';
+          element.style.top = (e.clientY - offsetY) + 'px';
+        }
+      });
+
+      document.addEventListener('mouseup', function() {
+        isDragging = false;
+      });
+    }
+    
+    document.querySelectorAll('*').forEach(makeDraggable);
+  </script>
+</body>
+</html>

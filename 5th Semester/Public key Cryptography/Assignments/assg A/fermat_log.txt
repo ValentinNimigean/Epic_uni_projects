@@ -1,0 +1,30 @@
+=== Fermat Factorization Log ===
+
+Initialization:
+t0 = floor(sqrt(n)) = 98
+
+Iterations:
+
+t = t0 + 1:   t^2 - n = 54     perfect square (yes/no): no
+t = t0 + 2:   t^2 - n = 253     perfect square (yes/no): no
+t = t0 + 3:   t^2 - n = 454     perfect square (yes/no): no
+t = t0 + 4:   t^2 - n = 657     perfect square (yes/no): no
+t = t0 + 5:   t^2 - n = 862     perfect square (yes/no): no
+t = t0 + 6:   t^2 - n = 1069     perfect square (yes/no): no
+t = t0 + 7:   t^2 - n = 1278     perfect square (yes/no): no
+t = t0 + 8:   t^2 - n = 1489     perfect square (yes/no): no
+t = t0 + 9:   t^2 - n = 1702     perfect square (yes/no): no
+t = t0 + 10:   t^2 - n = 1917     perfect square (yes/no): no
+t = t0 + 11:   t^2 - n = 2134     perfect square (yes/no): no
+t = t0 + 12:   t^2 - n = 2353     perfect square (yes/no): no
+t = t0 + 13:   t^2 - n = 2574     perfect square (yes/no): no
+t = t0 + 14:   t^2 - n = 2797     perfect square (yes/no): no
+t = t0 + 15:   t^2 - n = 3022     perfect square (yes/no): no
+t = t0 + 16:   t^2 - n = 3249     perfect square (yes/no): yes
+
+Values:
+s = 57
+t = 114
+
+Conclusion:
+The obtained two factors of n are (in increasing order): 57 and 171.

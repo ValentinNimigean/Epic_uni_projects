@@ -1,0 +1,15 @@
+Solution.
+
+Iterations (results mod n):
+
+x1 =     5    x2 =    26    (|x2 - x1|, n) = 1
+x3 =   677    x4 =  5544    (|x4 - x2|, n) = 1
+x5 =  4913    x6 =  1155    (|x6 - x3|, n) = 1
+x7 =  4880    x8 =  6621    (|x8 - x4|, n) = 1
+x9 =  5036    x10 =  5281    (|x10 - x5|, n) = 1
+x11 =  6108    x12 =  3941    (|x12 - x6|, n) = 1
+x13 =  5304    x14 =  1261    (|x14 - x7|, n) = 1
+x15 =  5371    x16 =   792    (|x16 - x8|, n) = 67
+
+Conclusion:
+The obtained two factors of n are (in increasing order): 67 and 109.
