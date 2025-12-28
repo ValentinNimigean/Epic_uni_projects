@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\Data",
+    "\\DTOs",
+    "\\Helpers",
+    "\\Migrations",
+    "\\Models"
+  ],
+  "SelectedNode": "\\Migrations\\20250527141840_UpdateDb.cs",
+  "PreviewInSolutionExplorer": false
+}

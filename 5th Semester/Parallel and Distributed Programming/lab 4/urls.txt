@@ -1,0 +1,6 @@
+﻿http://example.com/
+http://info.cern.ch/
+http://localhost:6767/cat.png
+http://localhost:6767/photo.png
+http://localhost:6767/proiect.mp3
+http://localhost:6767/txt_important.txt

@@ -1,0 +1,15 @@
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\bin\Debug\net8.0\pfp_lab_4.exe
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\bin\Debug\net8.0\pfp_lab_4.deps.json
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\bin\Debug\net8.0\pfp_lab_4.runtimeconfig.json
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\bin\Debug\net8.0\pfp_lab_4.dll
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\bin\Debug\net8.0\pfp_lab_4.pdb
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\obj\Debug\net8.0\pfp_lab_4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\obj\Debug\net8.0\pfp_lab_4.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\obj\Debug\net8.0\pfp_lab_4.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\obj\Debug\net8.0\pfp_lab_4.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\obj\Debug\net8.0\pfp_lab_4.sourcelink.json
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\obj\Debug\net8.0\pfp_lab_4.dll
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\obj\Debug\net8.0\refint\pfp_lab_4.dll
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\obj\Debug\net8.0\pfp_lab_4.pdb
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\obj\Debug\net8.0\pfp_lab_4.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\PandorAura\UBB-SE-2025-Team-1-GitPushForce\pfp_lab_4\obj\Debug\net8.0\ref\pfp_lab_4.dll

@@ -1,0 +1,279 @@
+
+===========================
+RUN AT 12/2/2025 5:49:09 PM
+===========================
+
+--- SMALL NUMBER RUN ---
+
+Small-number polynomial size: 64
+Naive sequential:     0.27 ms
+Naive parallel:       8.86 ms
+Karatsuba sequential: 0.72 ms
+Karatsuba parallel:   0.65 ms
+
+Small-number polynomial size: 128
+Naive sequential:     0.50 ms
+Naive parallel:       0.68 ms
+Karatsuba sequential: 0.49 ms
+Karatsuba parallel:   0.27 ms
+
+Small-number polynomial size: 256
+Naive sequential:     1.91 ms
+Naive parallel:       1.93 ms
+Karatsuba sequential: 1.15 ms
+Karatsuba parallel:   0.42 ms
+
+Small-number polynomial size: 512
+Naive sequential:     8.73 ms
+Naive parallel:       4.08 ms
+Karatsuba sequential: 2.29 ms
+Karatsuba parallel:   0.78 ms
+
+--- BIG NUMBER RUN ---
+
+Big-number polynomial size: 64
+Naive sequential:     1.98 ms
+Naive parallel:       0.60 ms
+Karatsuba sequential: 1.58 ms
+Karatsuba parallel:   1.55 ms
+
+Big-number polynomial size: 128
+Naive sequential:     5.92 ms
+Naive parallel:       1.68 ms
+Karatsuba sequential: 3.54 ms
+Karatsuba parallel:   1.23 ms
+
+
+===========================
+RUN AT 12/2/2025 7:34:09 PM
+===========================
+
+--- SMALL NUMBER RUN ---
+
+Small-number polynomial size: 64
+Naive sequential:     0.27 ms
+Naive parallel:       7.01 ms
+Karatsuba sequential: 0.54 ms
+Karatsuba parallel:   0.72 ms
+
+Small-number polynomial size: 128
+Naive sequential:     0.72 ms
+Naive parallel:       0.96 ms
+Karatsuba sequential: 0.37 ms
+Karatsuba parallel:   0.56 ms
+
+Small-number polynomial size: 256
+Naive sequential:     1.97 ms
+Naive parallel:       2.26 ms
+Karatsuba sequential: 1.01 ms
+Karatsuba parallel:   1.07 ms
+
+Small-number polynomial size: 512
+Naive sequential:     8.41 ms
+Naive parallel:       5.23 ms
+Karatsuba sequential: 3.40 ms
+Karatsuba parallel:   2.08 ms
+
+Small-number polynomial size: 10000
+Naive sequential:     2880.91 ms
+Naive parallel:       879.06 ms
+Karatsuba sequential: 494.77 ms
+Karatsuba parallel:   136.57 ms
+
+--- BIG NUMBER RUN ---
+
+Big-number polynomial size: 64
+Naive sequential:     1.86 ms
+Naive parallel:       0.88 ms
+Karatsuba sequential: 1.79 ms
+Karatsuba parallel:   1.32 ms
+
+Big-number polynomial size: 128
+Naive sequential:     5.65 ms
+Naive parallel:       3.20 ms
+Karatsuba sequential: 2.89 ms
+Karatsuba parallel:   3.24 ms
+
+
+===========================
+RUN AT 12/2/2025 7:36:06 PM
+===========================
+
+--- SMALL NUMBER RUN ---
+
+Small-number polynomial size: 64
+Naive sequential:     0.28 ms
+Naive parallel:       6.33 ms
+Karatsuba sequential: 0.49 ms
+Karatsuba parallel:   0.75 ms
+
+Small-number polynomial size: 128
+Naive sequential:     0.54 ms
+Naive parallel:       1.14 ms
+Karatsuba sequential: 0.42 ms
+Karatsuba parallel:   0.53 ms
+
+Small-number polynomial size: 500
+Naive sequential:     7.38 ms
+Naive parallel:       4.73 ms
+Karatsuba sequential: 2.74 ms
+Karatsuba parallel:   1.40 ms
+
+Small-number polynomial size: 1300
+Naive sequential:     45.09 ms
+Naive parallel:       22.52 ms
+Karatsuba sequential: 21.26 ms
+Karatsuba parallel:   8.39 ms
+
+Small-number polynomial size: 10000
+Naive sequential:     2028.89 ms
+Naive parallel:       765.29 ms
+Karatsuba sequential: 594.09 ms
+Karatsuba parallel:   142.84 ms
+
+--- BIG NUMBER RUN ---
+
+Big-number polynomial size: 64
+Naive sequential:     1.70 ms
+Naive parallel:       0.97 ms
+Karatsuba sequential: 1.11 ms
+Karatsuba parallel:   1.18 ms
+
+Big-number polynomial size: 120
+Naive sequential:     4.75 ms
+Naive parallel:       2.62 ms
+Karatsuba sequential: 2.72 ms
+Karatsuba parallel:   2.98 ms
+
+Big-number polynomial size: 300
+Naive sequential:     28.15 ms
+Naive parallel:       13.83 ms
+Karatsuba sequential: 19.20 ms
+Karatsuba parallel:   12.12 ms
+
+
+===========================
+RUN AT 12/2/2025 7:51:19 PM
+===========================
+
+--- SMALL NUMBER RUN ---
+
+Small-number polynomial size: 64
+Naive sequential:     0.15 ms
+Naive parallel:       4.63 ms
+Karatsuba sequential: 0.31 ms
+Karatsuba parallel:   0.53 ms
+
+Small-number polynomial size: 128
+Naive sequential:     0.39 ms
+Naive parallel:       0.83 ms
+Karatsuba sequential: 0.39 ms
+Karatsuba parallel:   0.47 ms
+
+Small-number polynomial size: 500
+Naive sequential:     4.70 ms
+Naive parallel:       3.76 ms
+Karatsuba sequential: 2.43 ms
+Karatsuba parallel:   1.45 ms
+
+Small-number polynomial size: 1300
+Naive sequential:     32.20 ms
+Naive parallel:       17.17 ms
+Karatsuba sequential: 16.86 ms
+Karatsuba parallel:   6.30 ms
+
+Small-number polynomial size: 10000
+Naive sequential:     1713.19 ms
+Naive parallel:       604.55 ms
+Karatsuba sequential: 392.85 ms
+Karatsuba parallel:   110.19 ms
+
+--- BIG NUMBER RUN ---
+
+Big-number polynomial size: 64
+Naive sequential:     1.33 ms
+Naive parallel:       0.69 ms
+Karatsuba sequential: 1.28 ms
+Karatsuba parallel:   1.01 ms
+
+Big-number polynomial size: 120
+Naive sequential:     3.64 ms
+Naive parallel:       2.18 ms
+Karatsuba sequential: 2.22 ms
+Karatsuba parallel:   2.05 ms
+
+Big-number polynomial size: 300
+Naive sequential:     20.91 ms
+Naive parallel:       10.98 ms
+Karatsuba sequential: 16.58 ms
+Karatsuba parallel:   10.50 ms
+
+Big-number polynomial size: 1000
+Naive sequential:     145.98 ms
+Naive parallel:       52.95 ms
+Karatsuba sequential: 37.01 ms
+Karatsuba parallel:   22.86 ms
+
+
+===========================
+RUN AT 12/2/2025 8:07:53 PM
+===========================
+
+--- SMALL NUMBER RUN ---
+
+Small-number polynomial size: 64
+Naive sequential:     0.26 ms
+Naive parallel:       6.72 ms
+Karatsuba sequential: 0.37 ms
+Karatsuba parallel:   0.73 ms
+
+Small-number polynomial size: 128
+Naive sequential:     0.52 ms
+Naive parallel:       1.35 ms
+Karatsuba sequential: 0.36 ms
+Karatsuba parallel:   0.51 ms
+
+Small-number polynomial size: 500
+Naive sequential:     6.20 ms
+Naive parallel:       4.79 ms
+Karatsuba sequential: 2.88 ms
+Karatsuba parallel:   1.73 ms
+
+Small-number polynomial size: 1300
+Naive sequential:     43.75 ms
+Naive parallel:       27.71 ms
+Karatsuba sequential: 23.50 ms
+Karatsuba parallel:   8.25 ms
+
+Small-number polynomial size: 10000
+Naive sequential:     1915.53 ms
+Naive parallel:       780.07 ms
+Karatsuba sequential: 608.31 ms
+Karatsuba parallel:   151.19 ms
+
+--- BIG NUMBER RUN ---
+
+Big-number polynomial size: 64
+Naive sequential:     1.72 ms
+Naive parallel:       0.94 ms
+Karatsuba sequential: 1.16 ms
+Karatsuba parallel:   1.12 ms
+
+Big-number polynomial size: 120
+Naive sequential:     5.05 ms
+Naive parallel:       3.49 ms
+Karatsuba sequential: 3.20 ms
+Karatsuba parallel:   3.29 ms
+
+Big-number polynomial size: 300
+Naive sequential:     28.09 ms
+Naive parallel:       14.30 ms
+Karatsuba sequential: 22.93 ms
+Karatsuba parallel:   15.86 ms
+
+Big-number polynomial size: 1000
+Naive sequential:     176.05 ms
+Naive parallel:       66.97 ms
+Karatsuba sequential: 66.70 ms
+Karatsuba parallel:   29.15 ms
+
