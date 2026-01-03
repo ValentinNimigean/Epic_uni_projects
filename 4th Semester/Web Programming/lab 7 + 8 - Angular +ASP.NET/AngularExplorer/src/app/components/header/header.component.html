@@ -1,0 +1,27 @@
+<header class="main-header">
+  <div class="header-container">
+    <div class="logo-container">
+      <h1 class="brand-title">{{ title }}</h1>
+    </div>
+
+    <nav class="nav-links" *ngIf="!isAuthPage">
+      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">
+        Home
+      </a>
+      <a routerLink="/documents" routerLinkActive="active" class="nav-link">
+        Documents
+      </a>
+      <a routerLink="/document/add" routerLinkActive="active" class="nav-link">
+        Add Document
+      </a>
+      <div *ngIf="(isLoggedIn$ | async)" class="user-section">
+
+        <button class="logout-button" (click)="logout()">
+          Logout
+        </button>
+        <span >    </span>
+        <span class="username">{{ username || 'User' }}</span>
+      </div>
+    </nav>
+  </div>
+</header>

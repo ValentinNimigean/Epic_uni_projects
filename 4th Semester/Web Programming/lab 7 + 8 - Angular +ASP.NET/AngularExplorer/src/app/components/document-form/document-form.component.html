@@ -1,0 +1,98 @@
+<div class="document-form-container">
+  <form [formGroup]="documentForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input
+        type="text"
+        id="title"
+        formControlName="title"
+        class="form-control"
+        [class.is-invalid]="documentForm.get('title')?.invalid && documentForm.get('title')?.touched"
+      >
+      <div class="invalid-feedback" *ngIf="documentForm.get('title')?.errors?.['required'] && documentForm.get('title')?.touched">
+        Title is required
+      </div>
+      <div class="invalid-feedback" *ngIf="documentForm.get('title')?.errors?.['minlength'] && documentForm.get('title')?.touched">
+        Title must be at least 3 characters
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input
+        type="text"
+        id="author"
+        formControlName="author"
+        class="form-control"
+        [class.is-invalid]="documentForm.get('author')?.invalid && documentForm.get('author')?.touched"
+      >
+      <div class="invalid-feedback" *ngIf="documentForm.get('author')?.errors?.['required'] && documentForm.get('author')?.touched">
+        Author is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="pages">Pages</label>
+      <input
+        type="number"
+        id="pages"
+        formControlName="pages"
+        class="form-control"
+        [class.is-invalid]="documentForm.get('pages')?.invalid && documentForm.get('pages')?.touched"
+      >
+      <div class="invalid-feedback" *ngIf="documentForm.get('pages')?.errors?.['required'] && documentForm.get('pages')?.touched">
+        Number of pages is required
+      </div>
+      <div class="invalid-feedback" *ngIf="documentForm.get('pages')?.errors?.['min'] && documentForm.get('pages')?.touched">
+        Number of pages must be at least 1
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="type">Document Type</label>
+      <select
+        id="type"
+        formControlName="type"
+        class="form-control"
+        [class.is-invalid]="documentForm.get('type')?.invalid && documentForm.get('type')?.touched"
+      >
+        <option value="" disabled>Select a document type</option>
+        <option value="article">Article</option>
+        <option value="book">Book</option>
+        <option value="report">Report</option>
+        <option value="research">Research Paper</option>
+        <option value="manual">Manual</option>
+      </select>
+      <div class="invalid-feedback" *ngIf="documentForm.get('type')?.errors?.['required'] && documentForm.get('type')?.touched">
+        Document type is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="format">Format</label>
+      <select
+        id="format"
+        formControlName="format"
+        class="form-control"
+        [class.is-invalid]="documentForm.get('format')?.invalid && documentForm.get('format')?.touched"
+      >
+        <option value="" disabled>Select a format</option>
+        <option value="pdf">PDF</option>
+        <option value="docx">DOCX</option>
+        <option value="txt">TXT</option>
+        <option value="epub">EPUB</option>
+      </select>
+      <div class="invalid-feedback" *ngIf="documentForm.get('format')?.errors?.['required'] && documentForm.get('format')?.touched">
+        Format is required
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button type="button" class="btn-cancel" (click)="onCancel()">Cancel</button>
+      <button type="submit" class="btn-submit" [disabled]="isSubmitting">
+        <span *ngIf="isSubmitting" class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+        {{ submitButtonText }}
+      </button>
+    </div>
+  </form>
+</div>

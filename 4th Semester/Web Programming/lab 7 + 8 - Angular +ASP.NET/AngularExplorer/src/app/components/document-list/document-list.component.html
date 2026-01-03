@@ -1,0 +1,111 @@
+<div class="documents-container">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="page-title">Documents</h2>
+
+  </div>
+
+  <div class="filter-section mb-4">
+    <div class="card filter-card">
+      <div class="card-header">
+        <h5 class="mb-0">Filter Documents</h5>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="form-group">
+              <label for="typeFilter">Document Type</label>
+              <select id="typeFilter" class="form-select" [(ngModel)]="typeFilter" (change)="applyFilters()">
+                <option value="">All Types</option>
+                <option *ngFor="let type of availableTypes" [value]="type">{{type}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">
+              <label for="formatFilter">Document Format</label>
+              <select id="formatFilter" class="form-select" [(ngModel)]="formatFilter" (change)="applyFilters()">
+                <option value="">All Formats</option>
+                <option *ngFor="let format of availableFormats" [value]="format">{{format}}</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div *ngIf="previousFilter" class="last-used-filter mb-4">
+    <div class="last-used-filter-title">Previously Used Filter</div>
+
+    <div class="filter-tags" *ngIf="previousFilter.type || previousFilter.format; else noFilterApplied">
+    <span *ngIf="previousFilter.type" class="filter-tag">
+      Type: {{previousFilter.type}}
+    </span>
+      <span *ngIf="previousFilter.format" class="filter-tag">
+      Format: {{previousFilter.format}}
+    </span>
+    </div>
+
+    <ng-template #noFilterApplied>
+      <div class="no-filter-message">No filters were applied</div>
+    </ng-template>
+
+    <div class="timestamp">
+      Used on: {{previousFilter.timestamp | date:'short'}}
+    </div>
+
+    <button class="apply-last-filter" (click)="applyPreviousFilter()">
+      Apply This Filter
+    </button>
+  </div>
+
+  <div *ngIf="loading" class="loading-spinner">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <div class="empty-list-message" *ngIf="!loading && filteredDocuments.length === 0">
+    No documents found matching your criteria.
+  </div>
+
+  <div class="error-message" *ngIf="error">
+    {{ error }}
+  </div>
+
+  <div *ngIf="!loading && filteredDocuments.length > 0">
+    <table class="documents-table">
+      <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Type</th>
+        <th>Format</th>
+        <th>Created</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let doc of filteredDocuments">
+        <td>{{ doc.title }}</td>
+        <td>{{ doc.author }}</td>
+        <td>{{ doc.pages }}</td>
+        <td>{{ doc.type }}</td>
+        <td>{{ doc.format }}</td>
+        <td>{{ doc.createdAt | date:'short' }}</td>
+        <td>
+          <div class="action-buttons">
+            <a [routerLink]="['/document', doc.id]" class="btn-view">View</a>
+            <button class="btn btn-delete" (click)="deleteDocument(doc.id)">
+              <i class="bi bi-trash me-1"></i> Delete Document
+            </button>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
