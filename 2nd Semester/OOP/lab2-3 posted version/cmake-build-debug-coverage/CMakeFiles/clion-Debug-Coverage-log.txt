@@ -1,0 +1,13 @@
+C:\Windows\system32\wsl.exe --distribution Ubuntu --exec "/mnt/c/Program Files/JetBrains/CLion 2024.1/bin/ttyfix" /bin/bash -c "export CLION_IDE=TRUE && export CMAKE_COLOR_DIAGNOSTICS=ON && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/valen/Documents/GitHub/a2-3-915-Nimigean-Valentin/cmake-build-debug-coverage && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS=--coverage -DCMAKE_C_FLAGS=--coverage -G 'CodeBlocks - Unix Makefiles' -S /mnt/c/Users/valen/Documents/GitHub/a2-3-915-Nimigean-Valentin -B /mnt/c/Users/valen/Documents/GitHub/a2-3-915-Nimigean-Valentin/cmake-build-debug-coverage"
+CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
+  CMake 3.27 or higher is required.  You are running version 3.22.1
+
+
+-- Configuring incomplete, errors occurred!
+
+Cannot get compiler information:
+	Compiler exited with error code 1: C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin\gcc.exe -xc --coverage -g -std=gnu11 -fpch-preprocess -v -dD -E
+	ld: unrecognised emulation mode: i386pep
+	Supported emulations: i386pe
+	
+	
