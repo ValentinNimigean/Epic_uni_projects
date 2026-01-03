@@ -1,0 +1,7 @@
+107,Kanye,1
+101,Drake,5
+106,Jay,7
+104,Nas,13
+102,Andre,18
+105,Jayz,23
+110,Portra,37
