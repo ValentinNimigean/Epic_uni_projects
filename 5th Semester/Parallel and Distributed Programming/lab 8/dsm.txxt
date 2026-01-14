@@ -1,0 +1,7 @@
+Total Order Broadcast
+lamport clock - compare cu incoming si current + 1
+ A message with timestamp $T$ is only processed
+  if the node has heard from every other subscriber
+   a timestamp that is greater than $T$. This proves 
+   that no message with a lower timestamp is still 
+   "in-flight" on the network.

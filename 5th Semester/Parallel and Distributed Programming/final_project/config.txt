@@ -1,0 +1,3 @@
+scene_path:scene1.png
+template_path:template.png
+dynamic_stride:true
