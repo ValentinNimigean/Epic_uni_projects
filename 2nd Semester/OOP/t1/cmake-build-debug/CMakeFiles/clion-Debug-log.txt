@@ -1,0 +1,6 @@
+C:\Windows\system32\wsl.exe --distribution Ubuntu --exec "/mnt/c/Program Files/JetBrains/CLion 2024.1/bin/ttyfix" /bin/bash -c "export CLION_IDE=TRUE && export CMAKE_COLOR_DIAGNOSTICS=ON && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/valen/Documents/GitHub/t1-915-Nimigean-Valentin-1/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /mnt/c/Users/valen/Documents/GitHub/t1-915-Nimigean-Valentin-1 -B /mnt/c/Users/valen/Documents/GitHub/t1-915-Nimigean-Valentin-1/cmake-build-debug"
+CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
+  CMake 3.27 or higher is required.  You are running version 3.22.1
+
+
+-- Configuring incomplete, errors occurred!
