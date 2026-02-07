@@ -1,0 +1,10 @@
+NameValentin
+Income:1000.000000
+NameAndrei
+Income:2000.000000
+NameSRL
+Income:12.000000
+Investment:120.000000
+NameSA
+Income:1200.000000
+Investment:122.000000
