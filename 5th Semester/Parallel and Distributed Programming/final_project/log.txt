@@ -1,0 +1,33 @@
+Technology: Threaded | Accuracy: 0.54353 | Time: 5072 ms
+Technology: MPI (1 processes) | Accuracy: 0.43577 | Time: 4712 ms
+Technology: MPI (6 processes) | Accuracy: 0.43577 | Time: 1324 ms
+Technology: MPI (6 processes) | Accuracy: 0.53388 | Time: 33807 ms
+Technology: MPI (7 processes) | Accuracy: 0.53388 | Time: 31464 ms
+Technology: Threaded | Accuracy: 0.54353 | Time: 5227 ms
+Technology: MPI (6 processes) | Accuracy: 0.53388 | Time: 32202 ms
+Technology: MPI (6 processes) | Accuracy: 0.43577 | Time: 1480 ms
+MPI+Pyramid | Score: -0.00226085 | Time: 118.837 ms
+Technology: MPI (6 processes) | Accuracy: 0.43577 | Time: 1182 ms
+Technology: Threaded | Accuracy: 0.42705 | Time: 208 ms
+Technology: Threaded | Accuracy: 0.42705 | Time: 208 ms
+Technology: Threaded | Accuracy: 0.42705 | Time: 223 ms
+Technology: MPI (6 processes) | Accuracy: 0.43577 | Time: 1418 ms
+Technology: MPI (6 processes) | Accuracy: 0.43577 | Time: 1440 ms
+Technology: MPI (6 processes) | Accuracy: 0.43577 | Time: 1331 ms
+Technology: MPI (6 processes) | Accuracy: 0.43577 | Time: 1250 ms
+Technology: MPI (6 processes) | Accuracy: 0.43577 | Time: 1385 ms
+Technology: Threaded | Accuracy: 0.42705 | Time: 209 ms
+Technology: MPI (6 processes) | Accuracy: 0.43577 | Time: 1425 ms
+Technology: MPI (2 processes) | Accuracy: 0.43577 | Time: 2973 ms
+Technology: Threaded | Accuracy: 0.42705 | Time: 259 ms
+Technology: OpenCL (C#) | Accuracy: 0.43575 | Time: 57 ms
+Technology: OpenCL (C#) | Accuracy: 0.43575 | Time: 44 ms
+Technology: OpenCL (C#) | Accuracy: 0.53489 | Time: 609 ms
+Technology: OpenCL (C#) | Accuracy: 0.53489 | Time: 586 ms
+Technology: Threaded | Accuracy: 0.54353 | Time: 6517 ms
+Technology: MPI (6 processes) | Accuracy: 0.53388 | Time: 37233 ms
+Technology: Threaded | Accuracy: 0.54353 | Time: 6866 ms
+Technology: MPI (6 processes) | Accuracy: 0.53388 | Time: 54941 ms
+Technology: MPI (6 processes) | Accuracy: 0.53388 | Time: 41608 ms
+Technology: MPI (6 processes) | Accuracy: 0.53388 | Time: 41961 ms
+Technology: Threaded | Accuracy: 0.54353 | Time: 6888 ms
