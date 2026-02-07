@@ -1,0 +1,1007 @@
+        -:    0:Source:C:/Users/valen/Documents/GitHub/oop-a4-5-915-Nimigean-Valentin/Tests.cpp
+        -:    0:Graph:C:\Users\valen\Documents\GitHub\oop-a4-5-915-Nimigean-Valentin\cmake-build-debug-coverage\CMakeFiles\oop_a4_5_915_Nimigean_Valentin.dir\Tests.cpp.gcno
+        -:    0:Data:C:\Users\valen\Documents\GitHub\oop-a4-5-915-Nimigean-Valentin\cmake-build-debug-coverage\CMakeFiles\oop_a4_5_915_Nimigean_Valentin.dir\Tests.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Source is newer than graph
+        -:    1://
+        -:    2:// Created by valen on 3/27/2024.
+        -:    3://
+        -:    4:
+        -:    5:#include "Tests.h"
+        -:    6:#include "Domain.h"
+        -:    7:#include "Dynamic_Vector.h"
+        -:    8:#include "Repository.h"
+        -:    9:#include "Controller.h"
+        -:   10:#include <assert.h>
+        -:   11:#include <iostream>
+        -:   12:using namespace std;
+        -:   13:
+function _Z19test_dynamic_vectorv called 1 returned 100% blocks executed 49%
+        1:   14:void test_dynamic_vector() {
+        1:   15:    DynamicVector <TrencchCoat>v(2);
+        1:   15-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:   16:    TrencchCoat t1("a", "a", 1, 1, "a");
+        1:   16-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   16-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   16-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   16-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   16-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   16-block  5
+call   15 never executed
+    $$$$$:   16-block  6
+    $$$$$:   16-block  7
+    $$$$$:   16-block  8
+call   16 never executed
+    $$$$$:   16-block  9
+    $$$$$:   16-block 10
+    $$$$$:   16-block 11
+call   17 never executed
+    $$$$$:   16-block 12
+    $$$$$:   16-block 13
+        6:   17:    TrencchCoat t2("b", "b", 2, 2, "b");
+        1:   17-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   17-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   17-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   17-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   17-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   17-block  5
+call   15 never executed
+    $$$$$:   17-block  6
+    $$$$$:   17-block  7
+    $$$$$:   17-block  8
+call   16 never executed
+    $$$$$:   17-block  9
+    $$$$$:   17-block 10
+    $$$$$:   17-block 11
+call   17 never executed
+    $$$$$:   17-block 12
+    $$$$$:   17-block 13
+        5:   18:    TrencchCoat t3("c", "c", 3, 3, "c");
+        1:   18-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   18-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   18-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   18-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   18-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   18-block  5
+call   15 never executed
+    $$$$$:   18-block  6
+    $$$$$:   18-block  7
+    $$$$$:   18-block  8
+call   16 never executed
+    $$$$$:   18-block  9
+    $$$$$:   18-block 10
+    $$$$$:   18-block 11
+call   17 never executed
+    $$$$$:   18-block 12
+    $$$$$:   18-block 13
+        -:   19:
+        1:   20:    v.add(t1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   21:    v.add(t2);
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   22:    v.add(t3);
+        1:   22-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   23:    cout << "Tests passed!"<<endl;
+        1:   23-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   23-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   24:}
+        1:   24-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+    $$$$$:   24-block  1
+call    4 never executed
+    $$$$$:   24-block  2
+call    5 never executed
+    $$$$$:   24-block  3
+call    6 never executed
+    $$$$$:   24-block  4
+call    7 never executed
+        -:   25:
+function _Z15test_repositoryv called 1 returned 100% blocks executed 51%
+        1:   26:void test_repository() {
+        1:   27:    Repository r;
+        1:   27-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:   28:    TrencchCoat t1("a", "a", 1, 1, "a");
+        1:   28-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   28-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   28-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   28-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   28-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   28-block  5
+call   15 never executed
+    $$$$$:   28-block  6
+    $$$$$:   28-block  7
+    $$$$$:   28-block  8
+call   16 never executed
+    $$$$$:   28-block  9
+    $$$$$:   28-block 10
+    $$$$$:   28-block 11
+call   17 never executed
+    $$$$$:   28-block 12
+    $$$$$:   28-block 13
+        6:   29:    TrencchCoat t2("b", "b", 2, 2, "b");
+        1:   29-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   29-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   29-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   29-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   29-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   29-block  5
+call   15 never executed
+    $$$$$:   29-block  6
+    $$$$$:   29-block  7
+    $$$$$:   29-block  8
+call   16 never executed
+    $$$$$:   29-block  9
+    $$$$$:   29-block 10
+    $$$$$:   29-block 11
+call   17 never executed
+    $$$$$:   29-block 12
+    $$$$$:   29-block 13
+        5:   30:    TrencchCoat t3("c", "c", 3, 3, "c");
+        1:   30-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   30-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   30-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   30-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   30-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   30-block  5
+call   15 never executed
+    $$$$$:   30-block  6
+    $$$$$:   30-block  7
+    $$$$$:   30-block  8
+call   16 never executed
+    $$$$$:   30-block  9
+    $$$$$:   30-block 10
+    $$$$$:   30-block 11
+call   17 never executed
+    $$$$$:   30-block 12
+    $$$$$:   30-block 13
+        -:   31:
+        1:   32:    r.addCoat_repo(t1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   33:    r.addCoat_repo(t2);
+        1:   33-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   34:    r.addCoat_repo(t3);
+        1:   34-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   35:
+       2*:   36:    assert(r.findCoat_repo("a") == 0);
+        1:   36-block  0
+        1:   36-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   36-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   36-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   36-block  4
+call    8 never executed
+        1:   36-block  5
+        1:   36-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   36-block  7
+call   11 returned 1
+        1:   36-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   36-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   36-block 10
+call   16 never executed
+    $$$$$:   36-block 11
+    $$$$$:   36-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   36-block 13
+       2*:   37:    assert(r.findCoat_repo("b") == 1);
+        1:   37-block  0
+        1:   37-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   37-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   37-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   37-block  4
+call    8 never executed
+        1:   37-block  5
+        1:   37-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   37-block  7
+call   11 returned 1
+        1:   37-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   37-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   37-block 10
+call   16 never executed
+    $$$$$:   37-block 11
+    $$$$$:   37-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   37-block 13
+       3*:   38:    assert(r.findCoat_repo("c") == 2);
+        1:   38-block  0
+        1:   38-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   38-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   38-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   38-block  4
+call    8 never executed
+        1:   38-block  5
+        1:   38-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   38-block  7
+call   11 returned 1
+        1:   38-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   38-block  9
+    $$$$$:   38-block 10
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   38-block 11
+call   16 never executed
+    $$$$$:   38-block 12
+    $$$$$:   38-block 13
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   38-block 14
+        -:   39:
+        2:   40:    r.removeCoat_repo("a");
+        1:   40-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   40-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   40-block  2
+call    6 returned 1
+    $$$$$:   40-block  3
+call    7 never executed
+    $$$$$:   40-block  4
+    $$$$$:   40-block  5
+        2:   41:    r.removeCoat_repo("b");
+        1:   41-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   41-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   41-block  2
+call    6 returned 1
+    $$$$$:   41-block  3
+call    7 never executed
+    $$$$$:   41-block  4
+    $$$$$:   41-block  5
+        1:   42:    r.removeCoat_repo("c");
+        1:   42-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   42-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   42-block  2
+call    6 returned 1
+    $$$$$:   42-block  3
+call    7 never executed
+    $$$$$:   42-block  4
+    $$$$$:   42-block  5
+        -:   43:
+       2*:   44:    assert(r.findCoat_repo("a") == -1);
+        1:   44-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   44-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   44-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   44-block  3
+call    8 never executed
+        1:   44-block  4
+        1:   44-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   44-block  6
+call   11 returned 1
+        1:   44-block  7
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   44-block  8
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   44-block  9
+call   16 never executed
+    $$$$$:   44-block 10
+    $$$$$:   44-block 11
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   44-block 12
+       2*:   45:    assert(r.findCoat_repo("b") == -1);
+        1:   45-block  0
+        1:   45-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   45-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   45-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   45-block  4
+call    8 never executed
+        1:   45-block  5
+        1:   45-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   45-block  7
+call   11 returned 1
+        1:   45-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   45-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   45-block 10
+call   16 never executed
+    $$$$$:   45-block 11
+    $$$$$:   45-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   45-block 13
+       2*:   46:    assert(r.findCoat_repo("c") == -1);
+        1:   46-block  0
+        1:   46-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   46-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   46-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   46-block  4
+call    8 never executed
+        1:   46-block  5
+        1:   46-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   46-block  7
+call   11 returned 1
+        1:   46-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   46-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   46-block 10
+call   16 never executed
+    $$$$$:   46-block 11
+    $$$$$:   46-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   46-block 13
+        1:   47:    cout << "Tests passed!"<<endl;
+        1:   47-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   47-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   48:}
+        1:   48-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+    $$$$$:   48-block  1
+call    4 never executed
+    $$$$$:   48-block  2
+call    5 never executed
+    $$$$$:   48-block  3
+call    6 never executed
+    $$$$$:   48-block  4
+call    7 never executed
+        -:   49:
+function _Z15test_controllerv called 1 returned 100% blocks executed 49%
+        1:   50:void test_controller() {
+        1:   51:    Repository r;
+        1:   51-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   52:    Controller c(r);
+        1:   52-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:   53:    TrencchCoat t1("a", "a", 1, 1, "a");
+        1:   53-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   53-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   53-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   53-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   53-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   53-block  5
+call   15 never executed
+    $$$$$:   53-block  6
+    $$$$$:   53-block  7
+    $$$$$:   53-block  8
+call   16 never executed
+    $$$$$:   53-block  9
+    $$$$$:   53-block 10
+    $$$$$:   53-block 11
+call   17 never executed
+    $$$$$:   53-block 12
+    $$$$$:   53-block 13
+        6:   54:    TrencchCoat t2("b", "b", 2, 2, "b");
+        1:   54-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   54-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   54-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   54-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   54-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   54-block  5
+call   15 never executed
+    $$$$$:   54-block  6
+    $$$$$:   54-block  7
+    $$$$$:   54-block  8
+call   16 never executed
+    $$$$$:   54-block  9
+    $$$$$:   54-block 10
+    $$$$$:   54-block 11
+call   17 never executed
+    $$$$$:   54-block 12
+    $$$$$:   54-block 13
+        6:   55:    TrencchCoat t3("c", "c", 3, 3, "c");
+        1:   55-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   55-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   55-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   55-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   55-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   55-block  5
+call   15 never executed
+    $$$$$:   55-block  6
+    $$$$$:   55-block  7
+    $$$$$:   55-block  8
+call   16 never executed
+    $$$$$:   55-block  9
+    $$$$$:   55-block 10
+    $$$$$:   55-block 11
+call   17 never executed
+    $$$$$:   55-block 12
+    $$$$$:   55-block 13
+        -:   56:
+        6:   57:    c.addCoat_Controller("a", "a", 1, 1, "a");
+        1:   57-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   57-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   57-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   57-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   57-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   57-block  5
+call   15 never executed
+    $$$$$:   57-block  6
+    $$$$$:   57-block  7
+    $$$$$:   57-block  8
+call   16 never executed
+    $$$$$:   57-block  9
+    $$$$$:   57-block 10
+    $$$$$:   57-block 11
+call   17 never executed
+    $$$$$:   57-block 12
+    $$$$$:   57-block 13
+        6:   58:    c.addCoat_Controller("b", "b", 2, 2, "b");
+        1:   58-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   58-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   58-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   58-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   58-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   58-block  5
+call   15 never executed
+    $$$$$:   58-block  6
+    $$$$$:   58-block  7
+    $$$$$:   58-block  8
+call   16 never executed
+    $$$$$:   58-block  9
+    $$$$$:   58-block 10
+    $$$$$:   58-block 11
+call   17 never executed
+    $$$$$:   58-block 12
+    $$$$$:   58-block 13
+        5:   59:    c.addCoat_Controller("c", "c", 3, 3, "c");
+        1:   59-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   59-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   59-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   59-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   59-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   59-block  5
+call   15 never executed
+    $$$$$:   59-block  6
+    $$$$$:   59-block  7
+    $$$$$:   59-block  8
+call   16 never executed
+    $$$$$:   59-block  9
+    $$$$$:   59-block 10
+    $$$$$:   59-block 11
+call   17 never executed
+    $$$$$:   59-block 12
+    $$$$$:   59-block 13
+        -:   60:
+       2*:   61:    assert(c.findCoat_Controller("a") == 0);
+        1:   61-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   61-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   61-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   61-block  3
+call    8 never executed
+        1:   61-block  4
+        1:   61-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   61-block  6
+call   11 returned 1
+        1:   61-block  7
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   61-block  8
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   61-block  9
+call   16 never executed
+    $$$$$:   61-block 10
+    $$$$$:   61-block 11
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   61-block 12
+       2*:   62:    assert(c.findCoat_Controller("b") == 1);
+        1:   62-block  0
+        1:   62-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   62-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   62-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   62-block  4
+call    8 never executed
+        1:   62-block  5
+        1:   62-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   62-block  7
+call   11 returned 1
+        1:   62-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   62-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   62-block 10
+call   16 never executed
+    $$$$$:   62-block 11
+    $$$$$:   62-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   62-block 13
+       3*:   63:    assert(c.findCoat_Controller("c") == 2);
+        1:   63-block  0
+        1:   63-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   63-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   63-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   63-block  4
+call    8 never executed
+        1:   63-block  5
+        1:   63-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   63-block  7
+call   11 returned 1
+        1:   63-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   63-block  9
+    $$$$$:   63-block 10
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   63-block 11
+call   16 never executed
+    $$$$$:   63-block 12
+    $$$$$:   63-block 13
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   63-block 14
+        -:   64:
+        1:   65:    c.removeCoat_Controller("a");
+        1:   65-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   65-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   65-block  2
+call    6 returned 1
+    $$$$$:   65-block  3
+call    7 never executed
+    $$$$$:   65-block  4
+    $$$$$:   65-block  5
+       3*:   66:    assert(c.findCoat_Controller("a") == -1);
+        1:   66-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   66-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   66-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   66-block  3
+call    8 never executed
+        1:   66-block  4
+        1:   66-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   66-block  6
+call   11 returned 1
+        1:   66-block  7
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   66-block  8
+    $$$$$:   66-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   66-block 10
+call   16 never executed
+    $$$$$:   66-block 11
+    $$$$$:   66-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   66-block 13
+        -:   67:
+        5:   68:    c.updateCoat_Controller("b","xl", "b", 3, 3);
+        1:   68-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   68-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   68-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   68-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   68-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   68-block  5
+call   15 never executed
+    $$$$$:   68-block  6
+    $$$$$:   68-block  7
+    $$$$$:   68-block  8
+call   16 never executed
+    $$$$$:   68-block  9
+    $$$$$:   68-block 10
+    $$$$$:   68-block 11
+call   17 never executed
+    $$$$$:   68-block 12
+    $$$$$:   68-block 13
+        -:   69:
+        1:   70:    cout << "Tests passed!"<<endl;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   70-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        -:   71:
+        -:   72:
+        -:   73:    c.buildShoppingBasket("XL");
+        1:   74:    c.update_list_user_mode_controller(c.buildShoppingBasket("XL"));
+        1:   74-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+    $$$$$:   74-block  1
+call    5 never executed
+    $$$$$:   74-block  2
+call    6 never executed
+    $$$$$:   74-block  3
+call    7 never executed
+    $$$$$:   74-block  4
+call    8 never executed
+    $$$$$:   74-block  5
+call    9 never executed
+        -:   75:    assert(c.listCoats_Controller().getSize() == 1);
+        -:   76:    cout << "Tests passed!"<<endl;
+        -:   77:
+        -:   78:}
+function _Z13complete_testv called 1 returned 100% blocks executed 100%
+        1:   79:
+        1:   80:
+        1:   80-block  0
+call    0 returned 1
+        1:   81:
+call    0 returned 1
+        1:   82:
+call    0 returned 1
+        -:   83:
+        1:   84:void complete_test(){
+        -:   85:    test_dynamic_vector();
+        -:   86:    test_repository();
+        -:   87:    test_controller();
+        -:   88:
+        -:   89:}

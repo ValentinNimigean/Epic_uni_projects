@@ -1,0 +1,1874 @@
+        -:    0:Source:C:/Users/valen/Documents/GitHub/oop-a4-5-915-Nimigean-Valentin/User_interface.cpp
+        -:    0:Graph:C:\Users\valen\Documents\GitHub\oop-a4-5-915-Nimigean-Valentin\cmake-build-debug-coverage\CMakeFiles\oop_a4_5_915_Nimigean_Valentin.dir\User_interface.cpp.gcno
+        -:    0:Data:C:\Users\valen\Documents\GitHub\oop-a4-5-915-Nimigean-Valentin\cmake-build-debug-coverage\CMakeFiles\oop_a4_5_915_Nimigean_Valentin.dir\User_interface.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by valen on 3/27/2024.
+        -:    3://
+        -:    4:
+        -:    5:
+        -:    6:using namespace std;
+        -:    7:#include "User_interface.h"
+        -:    8:#include <iostream>
+        -:    9:#include <cstring>
+        -:   10:#include <cstdlib>
+        -:   11:#include <string>
+        -:   12:
+        -:   13:
+function _ZN14User_interfaceC2ER10Controller called 1 returned 100% blocks executed 100%
+        1:   14:User_interface::User_interface(Controller &controller) : controller(controller) {}
+        1:   14-block  0
+call    0 returned 1
+        -:   15:
+function _ZN14User_interfaceD2Ev called 0 returned 0% blocks executed 0%
+    #####:   16:User_interface::~User_interface() = default;
+    %%%%%:   16-block  0
+call    0 never executed
+        -:   17:
+function _ZN14User_interface11read_numberEv called 1 returned 0% blocks executed 20%
+        1:   18:int User_interface::read_number() {
+        -:   19:    char s[100];
+        -:   20:    int x;
+        1:   21:    cin>>s;
+        1:   21-block  0
+call    0 returned 0
+branch  1 taken 0 (fallthrough)
+branch  2 taken 0 (throw)
+    #####:   22:    x = atoi(s);
+    %%%%%:   22-block  0
+call    0 never executed
+    #####:   23:    if(x != 0)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   24:        return x;
+    %%%%%:   24-block  0
+    #####:   25:    cout<<"Invalid number!"<<endl;
+    %%%%%:   25-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   25-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   26:    return -1;
+    %%%%%:   26-block  0
+        -:   27:}
+        -:   28:
+        -:   29:
+function _ZN14User_interface9printMenuEv called 0 returned 0% blocks executed 0%
+    #####:   30:void User_interface::printMenu() {
+    #####:   31:    cout<<"WELCOME TO MY EPIC TRENCHCOAT SHOP :3:"<<endl;
+    %%%%%:   31-block  0
+call    0 never executed
+call    1 never executed
+    #####:   32:    cout<<"1. Add a coat."<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   33:    cout<<"2. Remove a coat."<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   34:    cout<<"3. Update a coat."<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   35:    cout<<"4. List all coats."<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   36:    cout<<"5. Exit."<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   37:}
+        -:   38:
+function _ZN14User_interface10addCoat_UIEv called 0 returned 0% blocks executed 0%
+    #####:   39:void User_interface::addCoat_UI() {
+        -:   40:    char size[100], color[100], photograph[100];
+        -:   41:    int price, quantity;
+    #####:   42:    cout<<"Enter the size: ";
+    %%%%%:   42-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   43:    cin>>size;
+    %%%%%:   43-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   44:    if(strcmp(size, "XS") != 0 && strcmp(size, "S") != 0 && strcmp(size, "M") != 0 && strcmp(size, "L") != 0 && strcmp(size, "XL") != 0 && strcmp(size, "XXL") != 0)
+    %%%%%:   44-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   44-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    %%%%%:   44-block  2
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    %%%%%:   44-block  3
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    %%%%%:   44-block  4
+branch  8 never executed (fallthrough)
+branch  9 never executed
+    %%%%%:   44-block  5
+branch 10 never executed (fallthrough)
+branch 11 never executed
+        -:   45:    {
+    #####:   46:        cout<<"Invalid size."<<endl;
+    %%%%%:   46-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   46-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   47:        return;
+    %%%%%:   47-block  0
+    %%%%%:   47-block  1
+        -:   48:    }
+        -:   49:
+    #####:   50:    cout<<"Enter the color: ";
+    %%%%%:   50-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   51:    cin>>color;
+    %%%%%:   51-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   52:    cout<<"Enter the price: ";
+    %%%%%:   52-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   53:    price= read_number();
+    %%%%%:   53-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   54:    if(price == -1)
+    %%%%%:   54-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   55:        return;
+    %%%%%:   55-block  0
+    #####:   56:    cout<<"Enter the quantity: ";
+    %%%%%:   56-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   57:    quantity = read_number();
+    %%%%%:   57-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   58:    if(quantity== -1)
+    %%%%%:   58-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   59:        return;
+    %%%%%:   59-block  0
+    #####:   60:    cout<<"Enter the photograph: ";
+    %%%%%:   60-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   61:    cin>>photograph;
+    %%%%%:   61-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   62:    if(this->controller.findCoat_Controller(photograph) != -1)
+    %%%%%:   62-block  0
+    %%%%%:   62-block  1
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   62-block  2
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   62-block  3
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed
+    $$$$$:   62-block  4
+call    9 never executed
+    $$$$$:   62-block  5
+    $$$$$:   62-block  6
+        -:   63:    {
+    #####:   64:        cout<<"The coat already exists."<<endl;
+    %%%%%:   64-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   64-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   65:        return;
+    %%%%%:   65-block  0
+        -:   66:    }
+    #####:   67:    this->controller.addCoat_Controller(size, color, price, quantity, photograph);
+    %%%%%:   67-block  0
+    %%%%%:   67-block  1
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   67-block  2
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   67-block  3
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   67-block  4
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:   67-block  5
+call   12 never executed
+call   13 never executed
+call   14 never executed
+    $$$$$:   67-block  6
+call   15 never executed
+    $$$$$:   67-block  7
+    $$$$$:   67-block  8
+    $$$$$:   67-block  9
+call   16 never executed
+    $$$$$:   67-block 10
+    $$$$$:   67-block 11
+    $$$$$:   67-block 12
+call   17 never executed
+    $$$$$:   67-block 13
+    $$$$$:   67-block 14
+        -:   68:}
+        -:   69:
+function _ZN14User_interface13removeCoat_UIEv called 0 returned 0% blocks executed 0%
+    #####:   70:void User_interface::removeCoat_UI() {
+        -:   71:    char photograph[100];
+    #####:   72:    cout<<"Enter the photograph: ";
+    %%%%%:   72-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   73:    cin>>photograph;
+    %%%%%:   73-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   74:    if(this->controller.findCoat_Controller(photograph) == -1)
+    %%%%%:   74-block  0
+    %%%%%:   74-block  1
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   74-block  2
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   74-block  3
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed
+    $$$$$:   74-block  4
+call    9 never executed
+    $$$$$:   74-block  5
+    $$$$$:   74-block  6
+        -:   75:    {
+    #####:   76:        cout<<"The coat does not exist."<<endl;
+    %%%%%:   76-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   76-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   77:        return;
+    %%%%%:   77-block  0
+        -:   78:    }
+    #####:   79:    this->controller.removeCoat_Controller(photograph);
+    %%%%%:   79-block  0
+    %%%%%:   79-block  1
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   79-block  2
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   79-block  3
+call    6 never executed
+    $$$$$:   79-block  4
+call    7 never executed
+    $$$$$:   79-block  5
+    $$$$$:   79-block  6
+        -:   80:}
+        -:   81:
+function _ZN14User_interface13updateCoat_UIEv called 0 returned 0% blocks executed 0%
+    #####:   82:void User_interface::updateCoat_UI() {
+        -:   83:    char size[100], color[100], photograph[100], photograph_1[100];
+        -:   84:    int price, quantity;
+    #####:   85:    cout<<"Enter the photograph: ";
+    %%%%%:   85-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   86:
+    #####:   87:    cin>>photograph;
+    %%%%%:   87-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   88:    if(this->controller.findCoat_Controller(photograph) == -1)
+    %%%%%:   88-block  0
+    %%%%%:   88-block  1
+    %%%%%:   88-block  2
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   88-block  3
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   88-block  4
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed
+    $$$$$:   88-block  5
+call    9 never executed
+    $$$$$:   88-block  6
+    $$$$$:   88-block  7
+        -:   89:    {
+    #####:   90:        cout<<"The coat does not exist."<<endl;
+    %%%%%:   90-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   90-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   91:        return;
+    %%%%%:   91-block  0
+    %%%%%:   91-block  1
+        -:   92:    }
+    #####:   93:    cout<<"Enter the new size: ";
+    %%%%%:   93-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   94:    cin>>size;
+    %%%%%:   94-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   95:    if(strcmp(size, "XS") != 0 && strcmp(size, "S") != 0 && strcmp(size, "M") != 0 && strcmp(size, "L") != 0 && strcmp(size, "XL") != 0 && strcmp(size, "XXL") != 0)
+    %%%%%:   95-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   95-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    %%%%%:   95-block  2
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    %%%%%:   95-block  3
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    %%%%%:   95-block  4
+branch  8 never executed (fallthrough)
+branch  9 never executed
+    %%%%%:   95-block  5
+branch 10 never executed (fallthrough)
+branch 11 never executed
+        -:   96:    {
+    #####:   97:        cout<<"Invalid size."<<endl;
+    %%%%%:   97-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   97-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   98:        return;
+    %%%%%:   98-block  0
+        -:   99:    }
+    #####:  100:    cout<<"Enter the new color: ";
+    %%%%%:  100-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  101:    cin>>color;
+    %%%%%:  101-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  102:    cout<<"Enter the new price: ";
+    %%%%%:  102-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  103:    price= read_number();
+    %%%%%:  103-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  104:    if(price == -1)
+    %%%%%:  104-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  105:        return;
+    %%%%%:  105-block  0
+    #####:  106:    cout<<"Enter the quantity: ";
+    %%%%%:  106-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  107:    quantity = read_number();
+    %%%%%:  107-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  108:    if(quantity== -1)
+    %%%%%:  108-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  109:        return;
+    %%%%%:  109-block  0
+        -:  110:
+        -:  111:
+    #####:  112:    this->controller.updateCoat_Controller(photograph,size, color, price, quantity);
+    %%%%%:  112-block  0
+    %%%%%:  112-block  1
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  112-block  2
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  112-block  3
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  112-block  4
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  112-block  5
+call   12 never executed
+call   13 never executed
+call   14 never executed
+    $$$$$:  112-block  6
+call   15 never executed
+    $$$$$:  112-block  7
+    $$$$$:  112-block  8
+    $$$$$:  112-block  9
+call   16 never executed
+    $$$$$:  112-block 10
+    $$$$$:  112-block 11
+    $$$$$:  112-block 12
+call   17 never executed
+    $$$$$:  112-block 13
+    $$$$$:  112-block 14
+        -:  113:}
+        -:  114:
+function _ZN14User_interface12listCoats_UIEv called 0 returned 0% blocks executed 0%
+    #####:  115:void User_interface::listCoats_UI() {
+    #####:  116:    DynamicVector<TrencchCoat>coats = this->controller.listCoats_Controller();
+    %%%%%:  116-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  117:    for (int i = 0; i < coats.getSize(); i++) {
+    %%%%%:  117-block  0
+    %%%%%:  117-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed (fallthrough)
+    #####:  118:        TrencchCoat coat = coats[i];
+    %%%%%:  118-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    #####:  119:        cout<<"Size: "<<coat.getSize()<<", Color: "<<coat.getColor()<<", Price: "<<coat.getPrice()<<", Quantity: "<<coat.getQuantity()<<", Photograph: "<<coat.getPhotograph()<<endl;
+    %%%%%:  119-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  119-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  119-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  119-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  119-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:  119-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:  119-block  6
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:  119-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  119-block  8
+call   24 never executed
+branch 25 never executed (fallthrough)
+branch 26 never executed (throw)
+    %%%%%:  119-block  9
+call   27 never executed
+branch 28 never executed (fallthrough)
+branch 29 never executed (throw)
+    %%%%%:  119-block 10
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+    %%%%%:  119-block 11
+call   33 never executed
+branch 34 never executed (fallthrough)
+branch 35 never executed (throw)
+    %%%%%:  119-block 12
+call   36 never executed
+branch 37 never executed (fallthrough)
+branch 38 never executed (throw)
+    %%%%%:  119-block 13
+call   39 never executed
+branch 40 never executed (fallthrough)
+branch 41 never executed (throw)
+    %%%%%:  119-block 14
+call   42 never executed
+branch 43 never executed (fallthrough)
+branch 44 never executed (throw)
+    %%%%%:  119-block 15
+call   45 never executed
+branch 46 never executed (fallthrough)
+branch 47 never executed (throw)
+    #####:  120:    }
+    %%%%%:  120-block  0
+call    0 never executed
+    $$$$$:  120-block  1
+call    1 never executed
+    #####:  121:}
+    %%%%%:  121-block  0
+call    0 never executed
+    $$$$$:  121-block  1
+call    1 never executed
+function _ZN14User_interface3runEv called 1 returned 0% blocks executed 28%
+        1:  122:void User_interface::run() {
+        -:  123:
+        1:  124:    cout<<"Welcome to the trenchcoat shop! :3"<<endl;
+        1:  124-block  0
+call    0 returned 1
+call    1 returned 1
+        -:  125:    while(true)
+        -:  126:    {
+        1:  127:        cout<<"1. User mode."<<endl;
+        1:  127-block  0
+call    0 returned 1
+call    1 returned 1
+        1:  128:        cout<<"2. Admin mode."<<endl;
+call    0 returned 1
+call    1 returned 1
+        1:  129:        cout<<"3. Exit."<<endl;
+call    0 returned 1
+call    1 returned 1
+       1*:  130:        int command = read_number();
+call    0 returned 0
+    #####:  131:        if(command == 2)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+        -:  132:        {
+    #####:  133:            cout<<"Enter the admin password: ";
+    %%%%%:  133-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  134:            std::string password;
+    %%%%%:  134-block  0
+call    0 never executed
+    #####:  135:            cin>>password;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  136:            if(password != "admin321")
+    %%%%%:  136-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  136-block  1
+branch  3 never executed (fallthrough)
+branch  4 never executed
+        -:  137:            {
+    #####:  138:                cout<<"Invalid password."<<endl;
+    %%%%%:  138-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  138-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  139:                continue;
+    %%%%%:  139-block  0
+        -:  140:            }
+        -:  141:            else
+    #####:  142:            admin_mode();}
+    %%%%%:  142-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  142-block  1
+    %%%%%:  142-block  2
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    %%%%%:  142-block  3
+    $$$$$:  142-block  4
+call    6 never executed
+    #####:  143:        else if(command == 3)
+    %%%%%:  143-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  144:            break;
+    %%%%%:  144-block  0
+    #####:  145:        else if(command == 1)
+    %%%%%:  145-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  146:            this->user_mode();
+    %%%%%:  146-block  0
+call    0 never executed
+        -:  147:        else
+    #####:  148:            cout<<"Invalid command."<<endl;
+    %%%%%:  148-block  0
+call    0 never executed
+call    1 never executed
+    #####:  149:    }
+    %%%%%:  149-block  0
+        -:  150:
+        -:  151:
+    #####:  152:}
+    %%%%%:  152-block  0
+        -:  153:
+        -:  154:
+function _ZN14User_interface9user_modeEv called 0 returned 0% blocks executed 0%
+    #####:  155:void User_interface::user_mode(){
+    #####:  156:    cout<<"Welcome to the trenchcoat shop! :3"<<endl;
+    %%%%%:  156-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  156-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  157:    std::string size;
+    %%%%%:  157-block  0
+call    0 never executed
+    #####:  158:    size="invalid";
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  159:    while (size!="XXS" && size!="XS" && size!="S" && size!="M" && size!="L" && size!="XL" && size!="XXL" && size!="")
+    %%%%%:  159-block  0
+    %%%%%:  159-block  1
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  159-block  2
+branch  3 never executed (fallthrough)
+branch  4 never executed
+    %%%%%:  159-block  3
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:  159-block  4
+branch  8 never executed (fallthrough)
+branch  9 never executed
+    %%%%%:  159-block  5
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  159-block  6
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    %%%%%:  159-block  7
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:  159-block  8
+branch 18 never executed (fallthrough)
+branch 19 never executed
+    %%%%%:  159-block  9
+call   20 never executed
+branch 21 never executed (fallthrough)
+branch 22 never executed (throw)
+    %%%%%:  159-block 10
+branch 23 never executed (fallthrough)
+branch 24 never executed
+    %%%%%:  159-block 11
+call   25 never executed
+branch 26 never executed (fallthrough)
+branch 27 never executed (throw)
+    %%%%%:  159-block 12
+branch 28 never executed (fallthrough)
+branch 29 never executed
+    %%%%%:  159-block 13
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+    %%%%%:  159-block 14
+branch 33 never executed (fallthrough)
+branch 34 never executed
+    %%%%%:  159-block 15
+call   35 never executed
+branch 36 never executed (fallthrough)
+branch 37 never executed (throw)
+    %%%%%:  159-block 16
+branch 38 never executed (fallthrough)
+branch 39 never executed
+    %%%%%:  159-block 17
+    %%%%%:  159-block 18
+    %%%%%:  159-block 19
+branch 40 never executed
+branch 41 never executed (fallthrough)
+    #####:  160:    {cout<<"Please enter the size you want to buy: ";
+    %%%%%:  160-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  161:
+    #####:  162:    cin>>size;
+    %%%%%:  162-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  163:    if (size!="XXS" && size!="XS" && size!="S" && size!="M" && size!="L" && size!="XL" && size!="XXL"&& size!="")
+    %%%%%:  163-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  163-block  1
+branch  3 never executed (fallthrough)
+branch  4 never executed
+    %%%%%:  163-block  2
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:  163-block  3
+branch  8 never executed (fallthrough)
+branch  9 never executed
+    %%%%%:  163-block  4
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  163-block  5
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    %%%%%:  163-block  6
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:  163-block  7
+branch 18 never executed (fallthrough)
+branch 19 never executed
+    %%%%%:  163-block  8
+call   20 never executed
+branch 21 never executed (fallthrough)
+branch 22 never executed (throw)
+    %%%%%:  163-block  9
+branch 23 never executed (fallthrough)
+branch 24 never executed
+    %%%%%:  163-block 10
+call   25 never executed
+branch 26 never executed (fallthrough)
+branch 27 never executed (throw)
+    %%%%%:  163-block 11
+branch 28 never executed (fallthrough)
+branch 29 never executed
+    %%%%%:  163-block 12
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+    %%%%%:  163-block 13
+branch 33 never executed (fallthrough)
+branch 34 never executed
+    %%%%%:  163-block 14
+call   35 never executed
+branch 36 never executed (fallthrough)
+branch 37 never executed (throw)
+    %%%%%:  163-block 15
+branch 38 never executed (fallthrough)
+branch 39 never executed
+    %%%%%:  163-block 16
+    %%%%%:  163-block 17
+    %%%%%:  163-block 18
+branch 40 never executed (fallthrough)
+branch 41 never executed
+    #####:  164:        cout<<"Invalid size! Please enter a valid size."<<endl;
+    %%%%%:  164-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  164-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  165:    }
+        -:  166:
+    #####:  167:    DynamicVector<TrencchCoat> coats = this->controller.buildShoppingBasket(size);
+    %%%%%:  167-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  168:    cout<<"The coats available in the size you want are: "<<endl;
+    %%%%%:  168-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  168-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  169:    int prices=0;
+    #####:  170:    for (int i = 0; i < coats.getSize(); i++)
+    %%%%%:  170-block  0
+    %%%%%:  170-block  1
+    %%%%%:  170-block  2
+call    0 never executed
+branch  1 never executed
+branch  2 never executed (fallthrough)
+        -:  171:    {
+    #####:  172:        if (coats[i].getSize()==size)
+    %%%%%:  172-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  172-block  1
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  172-block  2
+branch  7 never executed (fallthrough)
+branch  8 never executed
+        -:  173:        {
+    #####:  174:            TrencchCoat coat = coats[i];
+    %%%%%:  174-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    #####:  175:            cout<<"Size: "<<coat.getSize()<<", Color: "<<coat.getColor()<<", Price: "<<coat.getPrice()<<", Quantity: "<<coat.getQuantity()<<", Photograph: "<<coat.getPhotograph()<<endl;
+    %%%%%:  175-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  175-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  175-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  175-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  175-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:  175-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:  175-block  6
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:  175-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  175-block  8
+call   24 never executed
+branch 25 never executed (fallthrough)
+branch 26 never executed (throw)
+    %%%%%:  175-block  9
+call   27 never executed
+branch 28 never executed (fallthrough)
+branch 29 never executed (throw)
+    %%%%%:  175-block 10
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+    %%%%%:  175-block 11
+call   33 never executed
+branch 34 never executed (fallthrough)
+branch 35 never executed (throw)
+    %%%%%:  175-block 12
+call   36 never executed
+branch 37 never executed (fallthrough)
+branch 38 never executed (throw)
+    %%%%%:  175-block 13
+call   39 never executed
+branch 40 never executed (fallthrough)
+branch 41 never executed (throw)
+    %%%%%:  175-block 14
+call   42 never executed
+branch 43 never executed (fallthrough)
+branch 44 never executed (throw)
+    %%%%%:  175-block 15
+call   45 never executed
+branch 46 never executed (fallthrough)
+branch 47 never executed (throw)
+    #####:  176:            cout<<"Do you want to buy this coat? (yes/no)"<<endl;
+    %%%%%:  176-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  176-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  177:            std::string answer;
+    %%%%%:  177-block  0
+call    0 never executed
+    #####:  178:            cin>>answer;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  179:            if (answer=="yes")
+    %%%%%:  179-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    #####:  180:            {prices+=coat.getPrice();
+    %%%%%:  180-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  181:                coats[i].setQuantity(coat.getQuantity()-1);
+    %%%%%:  181-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  181-block  1
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    #####:  182:                cout<<"The coat has been added to your shopping basket."<<endl;
+    %%%%%:  182-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  182-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  183:            }
+    #####:  184:        }
+    %%%%%:  184-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:  184-block  1
+call    2 never executed
+    $$$$$:  184-block  2
+call    3 never executed
+        -:  185:
+        -:  186:    }
+        -:  187:
+        -:  188:
+        -:  189:
+        -:  190:
+        -:  191:
+    #####:  192:    cout<<"The total price of the coats in your shopping basket is: "<<prices<<endl;
+    %%%%%:  192-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  192-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  192-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    #####:  193:    cout<<"Do you want to buy the cart? (yes/no)"<<endl;
+    %%%%%:  193-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  193-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  194:    std::string answer;
+    %%%%%:  194-block  0
+call    0 never executed
+    #####:  195:    cin>>answer;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  196:    if (answer=="yes")
+    %%%%%:  196-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+        -:  197:    {
+    #####:  198:        cout<<"The cart has been bought."<<endl;
+    %%%%%:  198-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  198-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  199:        this->controller.update_list_user_mode_controller(coats);
+    %%%%%:  199-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  199-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  199-block  2
+call    6 never executed
+    $$$$$:  199-block  3
+call    7 never executed
+    $$$$$:  199-block  4
+        -:  200:    }
+        -:  201:    else
+    #####:  202:        cout<<"The cart has not been bought."<<endl;
+    %%%%%:  202-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  202-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  203:
+        -:  204:
+    #####:  205:}
+    %%%%%:  205-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    $$$$$:  205-block  1
+call    3 never executed
+    $$$$$:  205-block  2
+call    4 never executed
+    $$$$$:  205-block  3
+call    5 never executed
+        -:  206:
+function _ZN14User_interface10admin_modeEv called 0 returned 0% blocks executed 0%
+    #####:  207:void User_interface::admin_mode() {
+    #####:  208:    cout<<"Welcome to the admin mode! :3"<<endl;
+    %%%%%:  208-block  0
+call    0 never executed
+call    1 never executed
+        -:  209:    while(true)
+        -:  210:    {
+    #####:  211:        printMenu();
+    %%%%%:  211-block  0
+call    0 never executed
+    #####:  212:        int command = read_number();
+call    0 never executed
+    #####:  213:        if(command == -1)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  214:            continue;
+    %%%%%:  214-block  0
+    #####:  215:        if(command == 1)
+    %%%%%:  215-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  216:            this->addCoat_UI();
+    %%%%%:  216-block  0
+call    0 never executed
+    #####:  217:        else if(command == 2)
+    %%%%%:  217-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  218:            this->removeCoat_UI();
+    %%%%%:  218-block  0
+call    0 never executed
+    #####:  219:        else if(command == 3)
+    %%%%%:  219-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  220:            this->updateCoat_UI();
+    %%%%%:  220-block  0
+call    0 never executed
+    #####:  221:        else if(command == 4)
+    %%%%%:  221-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  222:            this->listCoats_UI();
+    %%%%%:  222-block  0
+call    0 never executed
+    #####:  223:        else if(command == 5)
+    %%%%%:  223-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  224:            break;
+    %%%%%:  224-block  0
+        -:  225:        else
+    #####:  226:            cout<<"Invalid command."<<endl;
+    %%%%%:  226-block  0
+call    0 never executed
+call    1 never executed
+    #####:  227:    }
+    %%%%%:  227-block  0
+    #####:  228:}
+        -:  229:
+function _ZN14User_interface10hard_CodedEv called 1 returned 100% blocks executed 47%
+        1:  230:void User_interface::hard_Coded()
+        -:  231:{
+        6:  232:    this->controller.addCoat_Controller("XS", "red", 100, 5, "a");
+        1:  232-block  0
+        1:  232-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  232-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  232-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  232-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  232-block  5
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  232-block  6
+call   15 never executed
+    $$$$$:  232-block  7
+    $$$$$:  232-block  8
+    $$$$$:  232-block  9
+call   16 never executed
+    $$$$$:  232-block 10
+    $$$$$:  232-block 11
+    $$$$$:  232-block 12
+call   17 never executed
+    $$$$$:  232-block 13
+    $$$$$:  232-block 14
+call   18 never executed
+        6:  233:    this->controller.addCoat_Controller("S", "blue", 200, 3, "b");
+        1:  233-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  233-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  233-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  233-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  233-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  233-block  5
+call   15 never executed
+    $$$$$:  233-block  6
+    $$$$$:  233-block  7
+    $$$$$:  233-block  8
+call   16 never executed
+    $$$$$:  233-block  9
+    $$$$$:  233-block 10
+    $$$$$:  233-block 11
+call   17 never executed
+    $$$$$:  233-block 12
+    $$$$$:  233-block 13
+call   18 never executed
+        6:  234:    this->controller.addCoat_Controller("M", "green", 300, 2, "c");
+        1:  234-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  234-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  234-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  234-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  234-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  234-block  5
+call   15 never executed
+    $$$$$:  234-block  6
+    $$$$$:  234-block  7
+    $$$$$:  234-block  8
+call   16 never executed
+    $$$$$:  234-block  9
+    $$$$$:  234-block 10
+    $$$$$:  234-block 11
+call   17 never executed
+    $$$$$:  234-block 12
+    $$$$$:  234-block 13
+call   18 never executed
+        6:  235:    this->controller.addCoat_Controller("L", "yellow", 400, 1, "d");
+        1:  235-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  235-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  235-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  235-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  235-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  235-block  5
+call   15 never executed
+    $$$$$:  235-block  6
+    $$$$$:  235-block  7
+    $$$$$:  235-block  8
+call   16 never executed
+    $$$$$:  235-block  9
+    $$$$$:  235-block 10
+    $$$$$:  235-block 11
+call   17 never executed
+    $$$$$:  235-block 12
+    $$$$$:  235-block 13
+call   18 never executed
+        6:  236:    this->controller.addCoat_Controller("XL", "black", 500, 4, "e");
+        1:  236-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  236-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  236-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  236-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  236-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  236-block  5
+call   15 never executed
+    $$$$$:  236-block  6
+    $$$$$:  236-block  7
+    $$$$$:  236-block  8
+call   16 never executed
+    $$$$$:  236-block  9
+    $$$$$:  236-block 10
+    $$$$$:  236-block 11
+call   17 never executed
+    $$$$$:  236-block 12
+    $$$$$:  236-block 13
+call   18 never executed
+        6:  237:    this->controller.addCoat_Controller("XXL", "white", 600, 6, "f");
+        1:  237-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  237-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  237-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  237-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  237-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  237-block  5
+call   15 never executed
+    $$$$$:  237-block  6
+    $$$$$:  237-block  7
+    $$$$$:  237-block  8
+call   16 never executed
+    $$$$$:  237-block  9
+    $$$$$:  237-block 10
+    $$$$$:  237-block 11
+call   17 never executed
+    $$$$$:  237-block 12
+    $$$$$:  237-block 13
+call   18 never executed
+        6:  238:    this->controller.addCoat_Controller("XS", "red", 100, 5, "g");
+        1:  238-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  238-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  238-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  238-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  238-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  238-block  5
+call   15 never executed
+    $$$$$:  238-block  6
+    $$$$$:  238-block  7
+    $$$$$:  238-block  8
+call   16 never executed
+    $$$$$:  238-block  9
+    $$$$$:  238-block 10
+    $$$$$:  238-block 11
+call   17 never executed
+    $$$$$:  238-block 12
+    $$$$$:  238-block 13
+call   18 never executed
+        6:  239:    this->controller.addCoat_Controller("S", "blue", 200, 3, "h");
+        1:  239-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  239-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  239-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  239-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  239-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  239-block  5
+call   15 never executed
+    $$$$$:  239-block  6
+    $$$$$:  239-block  7
+    $$$$$:  239-block  8
+call   16 never executed
+    $$$$$:  239-block  9
+    $$$$$:  239-block 10
+    $$$$$:  239-block 11
+call   17 never executed
+    $$$$$:  239-block 12
+    $$$$$:  239-block 13
+call   18 never executed
+        6:  240:    this->controller.addCoat_Controller("M", "green", 300, 2, "i");
+        1:  240-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  240-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  240-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  240-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  240-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  240-block  5
+call   15 never executed
+    $$$$$:  240-block  6
+    $$$$$:  240-block  7
+    $$$$$:  240-block  8
+call   16 never executed
+    $$$$$:  240-block  9
+    $$$$$:  240-block 10
+    $$$$$:  240-block 11
+call   17 never executed
+    $$$$$:  240-block 12
+    $$$$$:  240-block 13
+call   18 never executed
+        6:  241:    this->controller.addCoat_Controller("L", "yellow", 400, 1, "j");
+        1:  241-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  241-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  241-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  241-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  241-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  241-block  5
+call   15 never executed
+    $$$$$:  241-block  6
+    $$$$$:  241-block  7
+    $$$$$:  241-block  8
+call   16 never executed
+    $$$$$:  241-block  9
+    $$$$$:  241-block 10
+    $$$$$:  241-block 11
+call   17 never executed
+    $$$$$:  241-block 12
+    $$$$$:  241-block 13
+call   18 never executed
+        6:  242:    this->controller.addCoat_Controller("XL", "black", 500, 4, "k");
+        1:  242-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  242-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  242-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  242-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  242-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  242-block  5
+call   15 never executed
+    $$$$$:  242-block  6
+    $$$$$:  242-block  7
+    $$$$$:  242-block  8
+call   16 never executed
+    $$$$$:  242-block  9
+    $$$$$:  242-block 10
+    $$$$$:  242-block 11
+call   17 never executed
+    $$$$$:  242-block 12
+    $$$$$:  242-block 13
+call   18 never executed
+        6:  243:    this->controller.addCoat_Controller("XXL", "white", 600, 6, "l");
+        1:  243-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  243-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  243-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  243-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  243-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  243-block  5
+call   15 never executed
+    $$$$$:  243-block  6
+    $$$$$:  243-block  7
+    $$$$$:  243-block  8
+call   16 never executed
+    $$$$$:  243-block  9
+    $$$$$:  243-block 10
+    $$$$$:  243-block 11
+call   17 never executed
+    $$$$$:  243-block 12
+    $$$$$:  243-block 13
+call   18 never executed
+        6:  244:    this->controller.addCoat_Controller("XS", "red", 100, 5, "m");
+        1:  244-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  244-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  244-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  244-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  244-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  244-block  5
+call   15 never executed
+    $$$$$:  244-block  6
+    $$$$$:  244-block  7
+    $$$$$:  244-block  8
+call   16 never executed
+    $$$$$:  244-block  9
+    $$$$$:  244-block 10
+    $$$$$:  244-block 11
+call   17 never executed
+    $$$$$:  244-block 12
+    $$$$$:  244-block 13
+call   18 never executed
+        6:  245:    this->controller.addCoat_Controller("S", "blue", 200, 3, "n");
+        1:  245-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  245-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  245-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  245-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  245-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  245-block  5
+call   15 never executed
+    $$$$$:  245-block  6
+    $$$$$:  245-block  7
+    $$$$$:  245-block  8
+call   16 never executed
+    $$$$$:  245-block  9
+    $$$$$:  245-block 10
+    $$$$$:  245-block 11
+call   17 never executed
+    $$$$$:  245-block 12
+    $$$$$:  245-block 13
+call   18 never executed
+        6:  246:    this->controller.addCoat_Controller("M", "green", 300, 2, "o");
+        1:  246-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  246-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  246-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  246-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  246-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  246-block  5
+call   15 never executed
+    $$$$$:  246-block  6
+    $$$$$:  246-block  7
+    $$$$$:  246-block  8
+call   16 never executed
+    $$$$$:  246-block  9
+    $$$$$:  246-block 10
+    $$$$$:  246-block 11
+call   17 never executed
+    $$$$$:  246-block 12
+    $$$$$:  246-block 13
+call   18 never executed
+        6:  247:    this->controller.addCoat_Controller("L", "yellow", 400, 1, "p");
+        1:  247-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  247-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  247-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  247-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  247-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  247-block  5
+call   15 never executed
+    $$$$$:  247-block  6
+    $$$$$:  247-block  7
+    $$$$$:  247-block  8
+call   16 never executed
+    $$$$$:  247-block  9
+    $$$$$:  247-block 10
+    $$$$$:  247-block 11
+call   17 never executed
+    $$$$$:  247-block 12
+    $$$$$:  247-block 13
+call   18 never executed
+        6:  248:    this->controller.addCoat_Controller("XL", "black", 500, 4, "q");
+        1:  248-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  248-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  248-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  248-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  248-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  248-block  5
+call   15 never executed
+    $$$$$:  248-block  6
+    $$$$$:  248-block  7
+    $$$$$:  248-block  8
+call   16 never executed
+    $$$$$:  248-block  9
+    $$$$$:  248-block 10
+    $$$$$:  248-block 11
+call   17 never executed
+    $$$$$:  248-block 12
+    $$$$$:  248-block 13
+call   18 never executed
+        6:  249:    this->controller.addCoat_Controller("XXL", "white", 600, 6, "r");
+        1:  249-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  249-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  249-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  249-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  249-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  249-block  5
+call   15 never executed
+    $$$$$:  249-block  6
+    $$$$$:  249-block  7
+    $$$$$:  249-block  8
+call   16 never executed
+    $$$$$:  249-block  9
+    $$$$$:  249-block 10
+    $$$$$:  249-block 11
+call   17 never executed
+    $$$$$:  249-block 12
+    $$$$$:  249-block 13
+call   18 never executed
+        6:  250:    this->controller.addCoat_Controller("XS", "red", 100, 5, "s");
+        1:  250-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  250-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  250-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  250-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  250-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  250-block  5
+call   15 never executed
+    $$$$$:  250-block  6
+    $$$$$:  250-block  7
+    $$$$$:  250-block  8
+call   16 never executed
+    $$$$$:  250-block  9
+    $$$$$:  250-block 10
+    $$$$$:  250-block 11
+call   17 never executed
+    $$$$$:  250-block 12
+    $$$$$:  250-block 13
+call   18 never executed
+        6:  251:    this->controller.addCoat_Controller("S", "blue", 200, 3, "t");
+        1:  251-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  251-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  251-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  251-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  251-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  251-block  5
+call   15 never executed
+    $$$$$:  251-block  6
+    $$$$$:  251-block  7
+    $$$$$:  251-block  8
+call   16 never executed
+    $$$$$:  251-block  9
+    $$$$$:  251-block 10
+    $$$$$:  251-block 11
+call   17 never executed
+    $$$$$:  251-block 12
+    $$$$$:  251-block 13
+call   18 never executed
+        6:  252:    this->controller.addCoat_Controller("M", "green", 300, 2, "u");
+        1:  252-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  252-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  252-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  252-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  252-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  252-block  5
+call   15 never executed
+    $$$$$:  252-block  6
+    $$$$$:  252-block  7
+    $$$$$:  252-block  8
+call   16 never executed
+    $$$$$:  252-block  9
+    $$$$$:  252-block 10
+    $$$$$:  252-block 11
+call   17 never executed
+    $$$$$:  252-block 12
+        1:  253:}
+        -:  254:
+        -:  255:
+        -:  256:
+        -:  257:
+        -:  258:
+        -:  259:
+        -:  260:

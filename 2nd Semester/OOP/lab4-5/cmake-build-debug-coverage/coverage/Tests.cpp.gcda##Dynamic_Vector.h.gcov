@@ -1,0 +1,240 @@
+        -:    0:Source:C:/Users/valen/Documents/GitHub/oop-a4-5-915-Nimigean-Valentin/Dynamic_Vector.h
+        -:    0:Graph:C:\Users\valen\Documents\GitHub\oop-a4-5-915-Nimigean-Valentin\cmake-build-debug-coverage\CMakeFiles\oop_a4_5_915_Nimigean_Valentin.dir\Tests.cpp.gcno
+        -:    0:Data:C:\Users\valen\Documents\GitHub\oop-a4-5-915-Nimigean-Valentin\cmake-build-debug-coverage\CMakeFiles\oop_a4_5_915_Nimigean_Valentin.dir\Tests.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:
+        -:    3:#ifndef OOP_A4_5_915_NIMIGEAN_VALENTIN_DYNAMIC_VECTOR_H
+        -:    4:#define OOP_A4_5_915_NIMIGEAN_VALENTIN_DYNAMIC_VECTOR_H
+        -:    5:#pragma once
+        -:    6:
+        -:    7:#include "Domain.h"
+        -:    8:
+        -:    9:template <typename TElement>
+        -:   10:class DynamicVector
+        -:   11:{
+        -:   12:private:
+        -:   13:    TElement* elems;
+        -:   14:    int size;
+        -:   15:    int capacity;
+        -:   16:
+        -:   17:public:
+        -:   18:
+function _ZN13DynamicVectorI11TrencchCoatEC1Ei called 0 returned 0% blocks executed 0%
+    #####:   19:    DynamicVector(int capacity=10)
+        -:   20:    {
+    #####:   21:        this->size = 0;
+    #####:   22:        this->capacity = capacity;
+    #####:   23:        this->elems = new TElement[capacity];
+    %%%%%:   23-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   23-block  1
+    %%%%%:   23-block  2
+    %%%%%:   23-block  3
+call    2 never executed
+    %%%%%:   23-block  4
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   23-block  5
+    %%%%%:   23-block  6
+branch  6 never executed
+branch  7 never executed (fallthrough)
+    $$$$$:   23-block  7
+branch  8 never executed (fallthrough)
+branch  9 never executed
+    $$$$$:   23-block  8
+    $$$$$:   23-block  9
+branch 10 never executed (fallthrough)
+branch 11 never executed
+    $$$$$:   23-block 10
+call   12 never executed
+    $$$$$:   23-block 11
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:   23-block 12
+branch 15 never executed (fallthrough)
+branch 16 never executed
+    $$$$$:   23-block 13
+    $$$$$:   23-block 14
+    $$$$$:   23-block 15
+call   17 never executed
+    #####:   24:    }
+    %%%%%:   24-block  0
+        -:   25:
+        -:   26:
+        -:   27:
+        -:   28:
+        -:   29:     DynamicVector(const DynamicVector& v)
+        -:   30:    {
+        -:   31:        this->size = v.size;
+        -:   32:        this->capacity = v.capacity;
+        -:   33:        this->elems = new TElement[this->capacity];
+        -:   34:        for (int i = 0; i < this->size; i++)
+        -:   35:            this->elems[i] = v.elems[i];
+        -:   36:    }
+        -:   37:
+function _ZN13DynamicVectorI11TrencchCoatED1Ev called 0 returned 0% blocks executed 0%
+    #####:   38:    ~DynamicVector()
+        -:   39:    {
+    #####:   40:        delete[] this->elems;
+    %%%%%:   40-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   40-block  1
+    %%%%%:   40-block  2
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    %%%%%:   40-block  3
+call    4 never executed
+    %%%%%:   40-block  4
+call    5 never executed
+    #####:   41:    }
+        -:   42:
+        -:   43:
+        -:   44:
+        -:   45:
+        -:   46:
+function _ZN13DynamicVectorI11TrencchCoatE3addERKS0_ called 0 returned 0% blocks executed 0%
+    #####:   47:    void add(const TElement& e) {
+    #####:   48:        if (this->size == this->capacity)
+    %%%%%:   48-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   49:            this->resize();
+    %%%%%:   49-block  0
+call    0 never executed
+    #####:   50:        this->elems[this->size] = e;
+    %%%%%:   50-block  0
+call    0 never executed
+    #####:   51:        this->size++;
+    #####:   52:    }
+        -:   53:
+        -:   54:    void remove(const TElement& e) {
+        -:   55:        int i = 0;
+        -:   56:        for (i = 0; i < this->size; i++)
+        -:   57:            if (this->elems[i] == e)
+        -:   58:                break;
+        -:   59:        for (int j = i; j < this->size - 1; j++)
+        -:   60:            this->elems[j] = this->elems[j + 1];
+        -:   61:        this->size--;
+        -:   62:
+        -:   63:    }
+        -:   64:
+        -:   65:
+        -:   66:    void update(const TElement& e, const TElement& new_e) {
+        -:   67:        for (int i = 0; i < this->size; i++)
+        -:   68:            if (this->elems[i] == e)
+        -:   69:                this->elems[i] = new_e;
+        -:   70:
+        -:   71:    }
+        -:   72:
+        -:   73:
+        -:   74:
+        -:   75:    TElement& operator[](int pos)
+        -:   76:    {
+        -:   77:        return this->elems[pos];
+        -:   78:    }
+        -:   79:
+        -:   80:
+        -:   81:
+        -:   82:    DynamicVector& operator=(const DynamicVector& v)
+        -:   83:    {
+        -:   84:        if (this == &v)
+        -:   85:            return *this;
+        -:   86:
+        -:   87:        this->size = v.size;
+        -:   88:        this->capacity = v.capacity;
+        -:   89:
+        -:   90:        delete[] this->elems;
+        -:   91:        this->elems = new TElement[this->capacity];
+        -:   92:        for (int i = 0; i < this->size; i++)
+        -:   93:            this->elems[i] = v.elems[i];
+        -:   94:
+        -:   95:        return *this;
+        -:   96:    }
+        -:   97:
+        -:   98:    int getSize() const {
+        -:   99:        return this->size;
+        -:  100:    }
+        -:  101:
+        -:  102:
+        -:  103:
+        -:  104:
+        -:  105:
+        -:  106:
+        -:  107:
+        -:  108:
+        -:  109:private:
+        -:  110:    // Resizes the current DynamicVector, multiplying its capacity by a given factor (real number).
+function _ZN13DynamicVectorI11TrencchCoatE6resizeEi called 0 returned 0% blocks executed 0%
+    #####:  111:    void resize(int factor = 2)
+        -:  112:    {
+    #####:  113:        this->capacity *= factor;
+        -:  114:
+    #####:  115:        TElement* els = new TElement[this->capacity];
+    %%%%%:  115-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:  115-block  1
+    %%%%%:  115-block  2
+    %%%%%:  115-block  3
+call    2 never executed
+    %%%%%:  115-block  4
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  115-block  5
+    %%%%%:  115-block  6
+branch  6 never executed
+branch  7 never executed (fallthrough)
+    $$$$$:  115-block  7
+branch  8 never executed (fallthrough)
+branch  9 never executed
+    $$$$$:  115-block  8
+    $$$$$:  115-block  9
+branch 10 never executed (fallthrough)
+branch 11 never executed
+    $$$$$:  115-block 10
+call   12 never executed
+    $$$$$:  115-block 11
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  115-block 12
+branch 15 never executed (fallthrough)
+branch 16 never executed
+    $$$$$:  115-block 13
+    $$$$$:  115-block 14
+    $$$$$:  115-block 15
+call   17 never executed
+    #####:  116:        for (int i = 0; i < this->size; i++)
+    %%%%%:  116-block  0
+    %%%%%:  116-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:  117:            els[i] = this->elems[i];
+    %%%%%:  117-block  0
+call    0 never executed
+        -:  118:
+    #####:  119:        delete[] this->elems;
+    %%%%%:  119-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:  119-block  1
+    %%%%%:  119-block  2
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    %%%%%:  119-block  3
+call    4 never executed
+    %%%%%:  119-block  4
+call    5 never executed
+    #####:  120:        this->elems = els;
+    #####:  121:    }
+    %%%%%:  121-block  0
+        -:  122:};
+        -:  123:
+        -:  124:
+        -:  125:
+        -:  126:
+        -:  127:#endif //OOP_A4_5_915_NIMIGEAN_VALENTIN_DYNAMIC_VECTOR_H

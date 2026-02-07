@@ -1,0 +1,323 @@
+        -:    0:Source:C:/Users/valen/Documents/GitHub/oop-a4-5-915-Nimigean-Valentin/Controller.cpp
+        -:    0:Graph:C:\Users\valen\Documents\GitHub\oop-a4-5-915-Nimigean-Valentin\cmake-build-debug-coverage\CMakeFiles\oop_a4_5_915_Nimigean_Valentin.dir\Controller.cpp.gcno
+        -:    0:Data:C:\Users\valen\Documents\GitHub\oop-a4-5-915-Nimigean-Valentin\cmake-build-debug-coverage\CMakeFiles\oop_a4_5_915_Nimigean_Valentin.dir\Controller.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Controller.h"
+        -:    2:#include "Repository.h"
+        -:    3:#include "Domain.h"
+        -:    4:#include <cstring>
+        -:    5:#include <iostream>
+        -:    6:using namespace std;
+        -:    7:
+function _ZN10ControllerC2ER10Repository called 2 returned 100% blocks executed 54%
+        2:    8:Controller::Controller(Repository &repository) : repository(repository) {
+        2:    8-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:    9:    this->shoppingBasket = DynamicVector<TrencchCoat>();
+        2:    9-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:    9-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:    9-block  2
+call    6 returned 2
+    $$$$$:    9-block  3
+call    7 never executed
+    $$$$$:    9-block  4
+        2:   10:}
+    $$$$$:   10-block  0
+call    0 never executed
+    $$$$$:   10-block  1
+call    1 never executed
+        -:   11:
+function _ZN10ControllerC2Ev called 0 returned 0% blocks executed 0%
+    #####:   12:Controller::Controller() {
+    %%%%%:   12-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    #####:   13:    this->repository = Repository();
+    %%%%%:   13-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   13-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   13-block  2
+call    6 never executed
+    $$$$$:   13-block  3
+call    7 never executed
+    $$$$$:   13-block  4
+        -:   14:
+    #####:   15:    this->shoppingBasket = DynamicVector<TrencchCoat>();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   15-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   15-block  1
+call    6 never executed
+    $$$$$:   15-block  2
+call    7 never executed
+    $$$$$:   15-block  3
+    #####:   16:}
+    $$$$$:   16-block  0
+call    0 never executed
+    $$$$$:   16-block  1
+call    1 never executed
+function _ZN10Controller18addCoat_ControllerERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_iiS7_ called 24 returned 100% blocks executed 71%
+       24:   17:void Controller::addCoat_Controller(const std::string &size, const std::string &color, int price, int quantity, const std::string &photograph) {
+       24:   18:    TrencchCoat coat(size, color, price, quantity, photograph);
+       24:   18-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   19:    this->repository.addCoat_repo(coat);
+       24:   19-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   20:
+        -:   21:
+       24:   22:}
+       24:   22-block  0
+call    0 returned 24
+    $$$$$:   22-block  1
+call    1 never executed
+        -:   23:
+function _ZN10Controller21removeCoat_ControllerERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 100%
+        1:   24:void Controller::removeCoat_Controller(const std::string &photograph) {
+        1:   25:    this->repository.removeCoat_repo(photograph);
+        1:   25-block  0
+call    0 returned 1
+        1:   26:}
+        -:   27:
+function _ZN10Controller21updateCoat_ControllerERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_ii called 1 returned 100% blocks executed 71%
+        1:   28:void Controller::updateCoat_Controller(const std::string &photograph, const std::string &size, const std::string &color, int price, int quantity) {
+        1:   29:    TrencchCoat coat(size, color, price, quantity, photograph);
+        1:   29-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   30:    this->repository.updateCoat_repo(photograph, coat);
+        1:   30-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   31:}
+        1:   31-block  0
+call    0 returned 1
+    $$$$$:   31-block  1
+call    1 never executed
+        -:   32:
+function _ZN10Controller19findCoat_ControllerERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 4 returned 100% blocks executed 100%
+        4:   33:int Controller::findCoat_Controller(const std::string &photo) {
+        4:   34:    return this->repository.findCoat_repo(photo);
+        4:   34-block  0
+call    0 returned 4
+        -:   35:
+        -:   36:}
+        -:   37:
+function _ZN10Controller19buildShoppingBasketERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   38:DynamicVector<TrencchCoat> Controller::buildShoppingBasket(const std::string &size) {
+    #####:   39:    int i = 0;
+    #####:   40:    if (size == "")
+    %%%%%:   40-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+        -:   41:    {
+    #####:   42:        for (i = 0; i < this->repository.getCoats().getSize(); i++)
+    %%%%%:   42-block  0
+    %%%%%:   42-block  1
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   42-block  2
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed (fallthrough)
+    $$$$$:   42-block  3
+call    7 never executed
+    #####:   43:            this->shoppingBasket.add(this->repository.getCoats()[i]);
+    %%%%%:   43-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   43-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:   43-block  2
+call    7 never executed
+    $$$$$:   43-block  3
+call    8 never executed
+    $$$$$:   43-block  4
+call    9 never executed
+    #####:   44:        return this->shoppingBasket;
+    %%%%%:   44-block  0
+call    0 never executed
+        -:   45:    } else
+        -:   46:    {
+    #####:   47:        for (i = 0; i < this->repository.getCoats().getSize(); i++)
+    %%%%%:   47-block  0
+    %%%%%:   47-block  1
+    %%%%%:   47-block  2
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   47-block  3
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed (fallthrough)
+    #####:   48:        if (this->repository.getCoats()[i].getSize() == size)
+    %%%%%:   48-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   48-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:   48-block  2
+call    7 never executed
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed
+    $$$$$:   48-block  3
+call   11 never executed
+    $$$$$:   48-block  4
+call   12 never executed
+    #####:   49:            this->shoppingBasket.add(this->repository.getCoats()[i]);
+    %%%%%:   49-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   49-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:   49-block  2
+call    7 never executed
+    $$$$$:   49-block  3
+call    8 never executed
+    $$$$$:   49-block  4
+call    9 never executed
+    #####:   50:        return this->shoppingBasket;
+    %%%%%:   50-block  0
+call    0 never executed
+        -:   51:    }
+        -:   52:}
+        -:   53:
+function _ZN10Controller20listCoats_ControllerEv called 0 returned 0% blocks executed 0%
+    #####:   54:DynamicVector<TrencchCoat>Controller::listCoats_Controller() {
+    #####:   55:    return this->repository.getCoats();}
+    %%%%%:   55-block  0
+call    0 never executed
+        -:   56:
+function _ZN10Controller32update_list_user_mode_controllerE13DynamicVectorI11TrencchCoatE called 0 returned 0% blocks executed 0%
+    #####:   57:void Controller::update_list_user_mode_controller(DynamicVector<TrencchCoat> list) {
+        -:   58:
+    #####:   59:    this->shoppingBasket = list;
+    %%%%%:   59-block  0
+call    0 never executed
+    #####:   60:    for (int i = 0; i < this->shoppingBasket.getSize(); i++)
+    %%%%%:   60-block  0
+    %%%%%:   60-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed (fallthrough)
+        -:   61:
+    #####:   62:        if (this->shoppingBasket[i].getQuantity() == 0)
+    %%%%%:   62-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    #####:   63:            this->repository.removeCoat_repo(this->shoppingBasket[i].getPhotograph());
+    %%%%%:   63-block  0
+    %%%%%:   63-block  1
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:   63-block  2
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:   63-block  3
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:   63-block  4
+call   10 never executed
+    $$$$$:   63-block  5
+call   11 never executed
+    $$$$$:   63-block  6
+    $$$$$:   63-block  7
+call   12 never executed
+        -:   64:        else
+    #####:   65:        this->repository.updateCoat_repo(this->shoppingBasket[i].getPhotograph(), this->shoppingBasket[i]);{
+    %%%%%:   65-block  0
+call    0 never executed
+    %%%%%:   65-block  1
+call    1 never executed
+call    2 never executed
+branch  3 never executed (fallthrough)
+branch  4 never executed (throw)
+    %%%%%:   65-block  2
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:   65-block  3
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:   65-block  4
+call   11 never executed
+    $$$$$:   65-block  5
+call   12 never executed
+    $$$$$:   65-block  6
+    $$$$$:   65-block  7
+call   13 never executed
+        -:   66:
+        -:   67:    }
+    #####:   68:    this->shoppingBasket = DynamicVector<TrencchCoat>();
+    %%%%%:   68-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   68-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   68-block  2
+call    6 never executed
+    $$$$$:   68-block  3
+call    7 never executed
+        -:   69:
+    #####:   70:}
+        -:   71:
+        -:   72:
+        -:   73:
+        -:   74:
+        -:   75:
+        -:   76:
+        -:   77:
+        -:   78:

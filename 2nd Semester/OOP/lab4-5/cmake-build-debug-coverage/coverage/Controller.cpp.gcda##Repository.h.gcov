@@ -1,0 +1,43 @@
+        -:    0:Source:C:/Users/valen/Documents/GitHub/oop-a4-5-915-Nimigean-Valentin/Repository.h
+        -:    0:Graph:C:\Users\valen\Documents\GitHub\oop-a4-5-915-Nimigean-Valentin\cmake-build-debug-coverage\CMakeFiles\oop_a4_5_915_Nimigean_Valentin.dir\Controller.cpp.gcno
+        -:    0:Data:C:\Users\valen\Documents\GitHub\oop-a4-5-915-Nimigean-Valentin\cmake-build-debug-coverage\CMakeFiles\oop_a4_5_915_Nimigean_Valentin.dir\Controller.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by valen on 3/26/2024.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef OOP_A4_5_915_NIMIGEAN_VALENTIN_REPOSITORY_H
+        -:    6:#define OOP_A4_5_915_NIMIGEAN_VALENTIN_REPOSITORY_H
+        -:    7:
+        -:    8:#include <string>
+        -:    9:#include "Dynamic_Vector.h"
+        -:   10:#include "Domain.h"
+        -:   11:
+        -:   12:class Repository {
+        -:   13:private:
+        -:   14:    DynamicVector<TrencchCoat> coats;
+        -:   15:public:
+        -:   16:    //default constructor
+        -:   17:    Repository();
+        -:   18:
+        -:   19:    //constructor with parameters
+        -:   20:
+        -:   21:
+        -:   22:    //adds a coat to the repository
+        -:   23:    void addCoat_repo(const TrencchCoat& e);
+        -:   24:
+        -:   25:    //removes a coat from the repository
+        -:   26:    void removeCoat_repo(const std::string& photo);
+        -:   27:
+        -:   28:    void updateCoat_repo(const std::string& photo, const TrencchCoat& new_coat);
+        -:   29:    //finds a coat in the repository
+        -:   30:    int findCoat_repo(const std::string& photo);
+        -:   31:    //returns the dynamic vector
+function _ZNK10Repository8getCoatsEv called 0 returned 0% blocks executed 0%
+    #####:   32:    DynamicVector<TrencchCoat> getCoats() const { return coats; }
+    %%%%%:   32-block  0
+call    0 never executed
+        -:   33:
+        -:   34:
+        -:   35:};
+        -:   36:#endif //OOP_A4_5_915_NIMIGEAN_VALENTIN_REPOSITORY_H

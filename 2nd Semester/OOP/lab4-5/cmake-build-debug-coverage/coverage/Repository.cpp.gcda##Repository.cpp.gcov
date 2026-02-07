@@ -1,0 +1,134 @@
+        -:    0:Source:C:/Users/valen/Documents/GitHub/oop-a4-5-915-Nimigean-Valentin/Repository.cpp
+        -:    0:Graph:C:\Users\valen\Documents\GitHub\oop-a4-5-915-Nimigean-Valentin\cmake-build-debug-coverage\CMakeFiles\oop_a4_5_915_Nimigean_Valentin.dir\Repository.cpp.gcno
+        -:    0:Data:C:\Users\valen\Documents\GitHub\oop-a4-5-915-Nimigean-Valentin\cmake-build-debug-coverage\CMakeFiles\oop_a4_5_915_Nimigean_Valentin.dir\Repository.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by valen on 3/26/2024.
+        -:    3://
+        -:    4:#include "Repository.h"
+        -:    5:#include "Dynamic_Vector.h"
+        -:    6:
+        -:    7:using namespace std;
+        -:    8:
+function _ZN10RepositoryC2Ev called 3 returned 100% blocks executed 60%
+        3:    9:Repository::Repository() {
+        3:    9-block  0
+call    0 returned 3
+        3:   10:    this->coats = DynamicVector<TrencchCoat>();
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   10-block  0
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:   10-block  1
+call    6 returned 3
+    $$$$$:   10-block  2
+call    7 never executed
+    $$$$$:   10-block  3
+        3:   11:}
+    $$$$$:   11-block  0
+call    0 never executed
+        -:   12:
+function _ZN10Repository12addCoat_repoERK11TrencchCoat called 27 returned 100% blocks executed 100%
+       27:   13:void Repository::addCoat_repo(const TrencchCoat& e) {
+       27:   14:    this->coats.add(e);
+       27:   14-block  0
+call    0 returned 27
+       27:   15:}
+        -:   16:
+function _ZN10Repository15removeCoat_repoERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 4 returned 100% blocks executed 88%
+        4:   17:void Repository::removeCoat_repo(const std::string& photo) {
+        4:   18:    int i = 0;
+        4:   19:    TrencchCoat removable;
+        4:   19-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+       13:   20:    for (i = 0; i < this->coats.getSize(); i++)
+        4:   20-block  0
+        9:   20-block  1
+       13:   20-block  2
+call    0 returned 13
+branch  1 taken 9
+branch  2 taken 4 (fallthrough)
+        9:   21:        if (this->coats[i].getPhotograph() == photo)
+        9:   21-block  0
+call    0 returned 9
+call    1 returned 9
+branch  2 taken 9 (fallthrough)
+branch  3 taken 0 (throw)
+        9:   21-block  1
+call    4 returned 9
+branch  5 taken 9 (fallthrough)
+branch  6 taken 0 (throw)
+        9:   21-block  2
+branch  7 taken 4 (fallthrough)
+branch  8 taken 5
+        4:   22:            removable= this->coats[i];
+        4:   22-block  0
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   23:    this->coats.remove(removable);
+        4:   23-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   24:}
+        4:   24-block  0
+call    0 returned 4
+    $$$$$:   24-block  1
+call    1 never executed
+        -:   25:
+        -:   26:
+function _ZN10Repository15updateCoat_repoERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERK11TrencchCoat called 1 returned 100% blocks executed 100%
+        1:   27:void Repository::updateCoat_repo(const std::string& photo, const TrencchCoat& new_coat) {
+        1:   28:    int i = 0;
+        3:   29:    for (i = 0; i < this->coats.getSize(); i++)
+        1:   29-block  0
+        2:   29-block  1
+        3:   29-block  2
+call    0 returned 3
+branch  1 taken 2
+branch  2 taken 1 (fallthrough)
+        2:   30:        if (this->coats[i].getPhotograph() == photo)
+        2:   30-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+branch  3 taken 1 (fallthrough)
+branch  4 taken 1
+        1:   31:            this->coats.update(this->coats[i], new_coat);
+        1:   31-block  0
+call    0 returned 1
+call    1 returned 1
+        1:   32:}
+        -:   33:
+function _ZN10Repository13findCoat_repoERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 10 returned 100% blocks executed 100%
+       10:   34:int Repository::findCoat_repo(const std::string& photo) {
+       18:   35:    for (int i = 0; i < this->coats.getSize(); i++)
+       10:   35-block  0
+        8:   35-block  1
+       18:   35-block  2
+call    0 returned 18
+branch  1 taken 14
+branch  2 taken 4 (fallthrough)
+       14:   36:        if (this->coats[i].getPhotograph() == photo)
+       14:   36-block  0
+call    0 returned 14
+call    1 returned 14
+call    2 returned 14
+branch  3 taken 6 (fallthrough)
+branch  4 taken 8
+        6:   37:            return i;
+        6:   37-block  0
+        4:   38:    return -1;
+        4:   38-block  0
+        -:   39:}
+        -:   40:
+        -:   41:
+        -:   42:
+        -:   43:
