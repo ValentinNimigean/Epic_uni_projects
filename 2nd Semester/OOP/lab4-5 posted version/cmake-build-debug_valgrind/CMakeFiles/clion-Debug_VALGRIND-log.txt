@@ -1,0 +1,4 @@
+C:\Windows\system32\wsl.exe --distribution Ubuntu --exec "/mnt/c/Program Files/JetBrains/CLion 2024.1/bin/ttyfix" /bin/bash -c "export CLION_IDE=TRUE && export CMAKE_COLOR_DIAGNOSTICS=ON && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/valen/Documents/GitHub/oop-a4-5-915-Nimigean-Valentin/cmake-build-debug_valgrind && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'Unix Makefiles' -S /mnt/c/Users/valen/Documents/GitHub/oop-a4-5-915-Nimigean-Valentin -B /mnt/c/Users/valen/Documents/GitHub/oop-a4-5-915-Nimigean-Valentin/cmake-build-debug_valgrind"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/valen/Documents/GitHub/oop-a4-5-915-Nimigean-Valentin/cmake-build-debug_valgrind
