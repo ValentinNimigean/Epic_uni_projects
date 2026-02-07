@@ -1,0 +1,5 @@
+C:/Users/valen/Documents/GitHub/oop-t3-915-Nimigean-Valentin/cmake-build-debug/CMakeFiles/oop_t3_915_Nimigean_Valentin.dir
+C:/Users/valen/Documents/GitHub/oop-t3-915-Nimigean-Valentin/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/valen/Documents/GitHub/oop-t3-915-Nimigean-Valentin/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/valen/Documents/GitHub/oop-t3-915-Nimigean-Valentin/cmake-build-debug/CMakeFiles/oop_t3_915_Nimigean_Valentin_autogen_timestamp_deps.dir
+C:/Users/valen/Documents/GitHub/oop-t3-915-Nimigean-Valentin/cmake-build-debug/CMakeFiles/oop_t3_915_Nimigean_Valentin_autogen.dir
