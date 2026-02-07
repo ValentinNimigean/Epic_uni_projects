@@ -1,0 +1,13 @@
+# ninja log v5
+24	675	7380921131820801	CMakeFiles/oop_a6_7_915_Nimigean_Valentin.dir/Main.cpp.obj	75538de26915c23c
+17	783	7380921132888421	CMakeFiles/oop_a6_7_915_Nimigean_Valentin.dir/Controller.cpp.obj	bdeef7062c5b9d08
+30	706	7380921132128596	CMakeFiles/oop_a6_7_915_Nimigean_Valentin.dir/Tests.cpp.obj	80d58bc1be37c44
+46	1066	7380229326337579	CMakeFiles/oop_a6_7_915_Nimigean_Valentin.dir/TrenchCoat_exceptions.cpp.obj	f44ba2ab7fc1d513
+50	3035	7380229346032589	CMakeFiles/oop_a6_7_915_Nimigean_Valentin.dir/File_writer.cpp.obj	84f11e75a7836875
+13	1095	7380229326627527	CMakeFiles/oop_a6_7_915_Nimigean_Valentin.dir/Domain.cpp.obj	2434ad6c6a030a83
+6	1155	7380229327232865	CMakeFiles/oop_a6_7_915_Nimigean_Valentin.dir/Repository.cpp.obj	90fdb11ad569d1bd
+36	859	7380921133661012	CMakeFiles/oop_a6_7_915_Nimigean_Valentin.dir/User_interface.cpp.obj	409a442f75ca98c2
+860	1105	7380921136047414	oop_a6_7_915_Nimigean_Valentin.exe	a0ac93109f4fc820
+13	361	7381474374711998	build.ninja	ddf09da8da99fda3
+45	999	7380919048699019	CMakeFiles/oop_a6_7_915_Nimigean_Valentin.dir/SQL_repo.cpp.obj	953d0a5dc39fe445
+37	7140	7380916253186437	CMakeFiles/oop_a6_7_915_Nimigean_Valentin.dir/sqlite3.c.obj	e784a15626b5c21e

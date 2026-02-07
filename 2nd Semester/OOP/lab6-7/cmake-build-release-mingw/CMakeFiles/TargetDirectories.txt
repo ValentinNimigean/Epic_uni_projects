@@ -1,0 +1,3 @@
+C:/Users/valen/Documents/GitHub/oop-a6-7-915-Nimigean-Valentin/cmake-build-release-mingw/CMakeFiles/oop_a6_7_915_Nimigean_Valentin.dir
+C:/Users/valen/Documents/GitHub/oop-a6-7-915-Nimigean-Valentin/cmake-build-release-mingw/CMakeFiles/edit_cache.dir
+C:/Users/valen/Documents/GitHub/oop-a6-7-915-Nimigean-Valentin/cmake-build-release-mingw/CMakeFiles/rebuild_cache.dir
