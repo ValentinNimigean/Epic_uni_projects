@@ -1,0 +1,136 @@
+i'll present the vue vnode
+dom-the document object model
+the html representation of the browser (how the browser interprets the html)
+every modification is pretty taxing
+- recalculates the layout
+- shifts elements on screen
+- repaints pixels on the screen
+
+
+
+
+VDOM-virtual dom
+a lightweight copy of the dom made entirely out of plain js
+-a massive tree made out of linked vnodes
+
+VNODE-a standard javascript object that describes what an html element should be
+
+cloneVNode() method:
+
+packages/runtime-core/src/vnode.ts
+
+
+export function cloneVNode<T, U>(
+  vnode: VNode<T, U>,
+  extraProps?: (Data & VNodeProps) | null,
+  mergeRef = false,
+  cloneTransition = false,
+): VNode<T, U> {
+  // This is intentionally NOT using spread or extend to avoid the runtime
+  // key enumeration cost.
+  const { props, ref, patchFlag, children, transition } = vnode
+  const mergedProps = extraProps ? mergeProps(props || {}, extraProps) : props
+  const cloned: VNode<T, U> = {
+    __v_isVNode: true,
+    __v_skip: true,
+    type: vnode.type,
+    props: mergedProps,
+    key: mergedProps && normalizeKey(mergedProps),
+    ref:
+      extraProps && extraProps.ref
+        ? // #2078 in the case of <component :is="vnode" ref="extra"/>
+          // if the vnode itself already has a ref, cloneVNode will need to merge
+          // the refs so the single vnode can be set on multiple refs
+          mergeRef && ref
+          ? isArray(ref)
+            ? ref.concat(normalizeRef(extraProps)!)
+            : [ref, normalizeRef(extraProps)!]
+          : normalizeRef(extraProps)
+        : ref,
+    scopeId: vnode.scopeId,
+    slotScopeIds: vnode.slotScopeIds,
+    children:
+      __DEV__ && patchFlag === PatchFlags.CACHED && isArray(children)
+        ? (children as VNode[]).map(deepCloneVNode)
+        : children,
+    target: vnode.target,
+    targetStart: vnode.targetStart,
+    targetAnchor: vnode.targetAnchor,
+    staticCount: vnode.staticCount,
+    shapeFlag: vnode.shapeFlag,
+    // if the vnode is cloned with extra props, we can no longer assume its
+    // existing patch flag to be reliable and need to add the FULL_PROPS flag.
+    // note: preserve flag for fragments since they use the flag for children
+    // fast paths only.
+    patchFlag:
+      extraProps && vnode.type !== Fragment
+        ? patchFlag === PatchFlags.CACHED // hoisted node
+          ? PatchFlags.FULL_PROPS
+          : patchFlag | PatchFlags.FULL_PROPS
+        : patchFlag,
+    dynamicProps: vnode.dynamicProps,
+    dynamicChildren: vnode.dynamicChildren,
+    appContext: vnode.appContext,
+    dirs: vnode.dirs,
+    transition,
+
+    // These should technically only be non-null on mounted VNodes. However,
+    // they *should* be copied for kept-alive vnodes. So we just always copy
+    // them since them being non-null during a mount doesn't affect the logic as
+    // they will simply be overwritten.
+    component: vnode.component,
+    suspense: vnode.suspense,
+    ssContent: vnode.ssContent && cloneVNode(vnode.ssContent),
+    ssFallback: vnode.ssFallback && cloneVNode(vnode.ssFallback),
+    placeholder: vnode.placeholder,
+
+    el: vnode.el,
+    anchor: vnode.anchor,
+    ctx: vnode.ctx,
+    ce: vnode.ce,
+  }
+
+  // if the vnode will be replaced by the cloned one, it is necessary
+  // to clone the transition to ensure that the vnode referenced within
+  // the transition hooks is fresh.
+  if (transition && cloneTransition) {
+    setTransitionHooks(
+      cloned as VNode,
+      transition.clone(cloned as VNode) as TransitionHooks,
+    )
+  }
+
+  if (__COMPAT__) {
+    defineLegacyVNodeProperties(cloned as VNode)
+  }
+
+  return cloned
+}
+
+/**
+ * Dev only, for HMR of hoisted vnodes reused in v-for
+ * https://github.com/vitejs/vite/issues/2022
+ */
+
+
+clone v node is a standalone method vue ditches the OOP method.
+ There is no myNode.clone().
+ Instead, the "interface" is just the strict structural shape of the VNode object 
+(defined by TypeScript), and the cloning contract is fulfilled by the standal one 
+cloneVNode(vnode) function.
+
+
+The VNode object is the concrete prototype.
+
+all the edge cases are handled by the cloneVnode method 
+
+
+The "Client" is Vue's Internal Render Engine.
+
+
+
+The textbook says the Prototype pattern uses an interface with a clone() method.
+ But Vue is built for maximum web performance, so it breaks the OOP rules.
+ Instead of putting a slow clone() method inside every single object, 
+Vue uses a standalone function (cloneVNode) to copy the data and handle all the recursive edge cases. 
+The pattern's philosophy is exactly the same, but the execution is optimized for JavaScript
